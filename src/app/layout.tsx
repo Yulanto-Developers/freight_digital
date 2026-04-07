@@ -12,30 +12,28 @@ import NextTopLoader from 'nextjs-toploader';
 
 export default function RootLayout({
   children,
-  session,
 }: Readonly<{
   children: React.ReactNode;
-  session:any
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={dmsans.className}>
-      <AuthDialogProvider>
-      <SessionProviderComp session={session}>
-        <ThemeProvider
-          attribute="class"
-          enableSystem={true}
-          defaultTheme="system"
-        >
-          <Aoscompo>
-            <Header />
-            <NextTopLoader />
-            {children}
-            <Footer />
-          </Aoscompo>
-          <ScrollToTop />
-        </ThemeProvider>
-        </SessionProviderComp>
+        <AuthDialogProvider>
+          <SessionProviderComp> 
+            <ThemeProvider
+              attribute="class"
+              enableSystem={true}
+              defaultTheme="system"
+            >
+              <Aoscompo>
+                <Header />
+                <NextTopLoader />
+                {children}
+                <Footer />
+              </Aoscompo>
+              <ScrollToTop />
+            </ThemeProvider>
+          </SessionProviderComp>
         </AuthDialogProvider>
       </body>
     </html>
