@@ -106,54 +106,6 @@ const ThumbnailCarousel: React.FC = () => {
                             />
                         </div>
                     ))}
-                    {/* <div>
-                        <Image
-                            src="/images/home-img/img-1.jpg"
-                            alt="Conference"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div> */}
-                    {/* <div>
-                        <Image
-                            src="/images/home-img/img-1.jpg"
-                            alt="Conference"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/home-img/img-1.jpg"
-                            alt="Conference"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/Slider_4.jpg"
-                            alt="Conference"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div> */}
                 </Slider>
                 <Slider {...settingsNav} ref={navSliderRef} className="thumb">
                     {img.map((item, index) => (
@@ -171,54 +123,7 @@ const ThumbnailCarousel: React.FC = () => {
                         </div>
                     ))}
 
-                    {/* <div>
-                        <Image
-                            src="/images/ThumbnailSlider/Slider_1.png"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/Slider_2.jpg"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/Slider_3.png"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div>
-                    <div>
-                        <Image
-                            src="/images/ThumbnailSlider/Slider_4.jpg"
-                            alt="Thumbnail"
-                            width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
-                        />
-                    </div> */}
+                 
                 </Slider>
             </div>
         </>

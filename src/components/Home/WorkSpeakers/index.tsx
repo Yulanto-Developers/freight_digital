@@ -11,7 +11,10 @@ const WorkSpeakers = ({ showTitle = true }) => {
     <>
       <section className={` dark:bg-darkmode ${pathname === "/" ? "" : ""}`}>
         {showTitle && (
-          <h2 className="text-center pb-12">World Class Speakers</h2>
+          <div className="bg-white px-2 py-1 rounded-lg">
+            <span className="text-black">Our Goals</span>
+            <h2 className="text-center pb-12">World Class Speakers</h2>
+          </div>
         )}
         <div className="grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 items-stretch gap-8 mx-7">
           {speakers.map((speaker, index) => (

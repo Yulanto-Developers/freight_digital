@@ -2,13 +2,13 @@
     @apply !flex !items-center !gap-5;
 }
 .thumb .slick-next:before, .thumb .slick-prev:before{
-    @apply text-primary;
+    @apply text-[#fff];
 }
 .upcoming .slick-next:before, .upcoming .slick-prev:before{
     @apply text-primary;
 }
 .slick-dots li.slick-active button:before{
-    @apply !text-primary;
+    @apply !text-[#fff];
 }
 .slick-dots li button:before{
     @apply !text-base;
