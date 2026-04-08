@@ -13,7 +13,7 @@ const sliderData = [
         tag: "",
         title: "Grow Your Logistics Business \n With Digital Power",
         desc: "Freight Digital helps freight forwarders, IATA agents, and logistics companies boost visibility and generate high-quality business leads through targeted digital marketing.",
-        bgImage: "/images/banner/banner-1.jpg",
+        bgImage: "/images/banner/banner-1.1.jpg",
         accent: "from-blue-600 to-cyan-400",
     },
     {
@@ -64,11 +64,11 @@ export default function HeroSlider() {
                                 </p>
 
                                 <div className="flex flex-wrap gap-6">
-                                    <Link href="/" className="px-10 py-5 bg-white text-slate-900 font-bold rounded-2xl hover:bg-blue-50 transition-all duration-300 shadow-2xl hover:-translate-y-1">
-                                        Book Your Spot
+                                    <Link href="/services" className="px-10 py-5 bg-white text-slate-900 font-bold rounded-2xl hover:bg-blue-50 transition-all duration-300 shadow-2xl hover:-translate-y-1">
+                                        Our Solutions
                                     </Link>
-                                    <Link href="/" className="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-2xl hover:bg-white/20 transition-all duration-300">
-                                        View Schedule
+                                    <Link href="/contact" className="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-2xl hover:bg-white/20 transition-all duration-300">
+                                        Reach Us
                                     </Link>
                                 </div>
                             </div>

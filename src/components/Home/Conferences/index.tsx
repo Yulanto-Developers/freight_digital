@@ -21,8 +21,8 @@ const Conferences = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-white rounded-xl tracking-wider text-[#0D1A2C]">Welcome to freight digital</span>
-              <h2 className="uppercase">What freight digitl provide</h2>
+              <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-white rounded-xl tracking-wider text-[#0D1A2C]">Welcome to </span>
+              <h2 className="uppercase">freight digital</h2>
               <p className="text-lg font-normal text-justify text-SlateBlueText dark:text-opacity-80 max-w-506 md:pt-3 pt-5 md:pb-10 pb-6">
                 Freight Digital is a specialized marketing platform designed exclusively for the logistics sector, including freight forwarders, shipping companies, and IATA agents. Leveraging deep industry expertise, they help businesses like customs brokers and warehouse providers enhance their digital presence and drive growth.
               </p>
@@ -30,7 +30,7 @@ const Conferences = () => {
                 href="/about"
                 className="btn_outline btn-2 hover-outline-slide-down"
               >
-                <span>About Us</span>
+                <span>Read more</span>
               </Link>
             </div>
           </div>

@@ -114,16 +114,16 @@ const ThumbnailCarousel: React.FC = () => {
                                 src={item}
                                 alt={`Conference ${index + 1}`}
                                 width={0}
-                            height={0}
-                            quality={100}
-                            layout="responsive"
-                            sizes="100vh"
-                            className="rounded-lg"
+                                height={0}
+                                quality={100}
+                                layout="responsive"
+                                sizes="100vh"
+                                className="rounded-lg"
                             />
                         </div>
                     ))}
 
-                 
+
                 </Slider>
             </div>
         </>

@@ -9,16 +9,7 @@ const Footer: FC = () => {
                 <div className="flex items-center justify-between flex-wrap md:pt-44 pt-16 md:pb-20 pb-6 border-b border-solid border-dark_border">
                     <div>
                         <Link href="/">
-                            <Image
-                                src="/images/footer/footer-logo-white.svg"
-                                alt="logo"
-                                width={0}
-                                height={0}
-                                quality={100}
-                                layout="responsive"
-                                sizes="100vh"
-                                className="w-full h-full"
-                            />
+                            <p className="text-2xl font-black italic">FREIGHT DIGITAL</p>
                         </Link>
                     </div>
                     <div>
@@ -27,16 +18,16 @@ const Footer: FC = () => {
                                 <Link href="/">Home</Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Speakers</Link>
+                                <Link href="/about">About Us</Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Schedule</Link>
+                                <Link href="/services">Our Services</Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">About</Link>
+                                <Link href="/adverise">Advertise With Us</Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Sponsors</Link>
+                                <Link href="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>
@@ -118,19 +109,15 @@ const Footer: FC = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="grid md:grid-cols-12 grid-cols-1 items-center py-8">
-                    <div className="col-span-5">
+                <div className="flex justify-between items-center py-8">
+                    <div className="">
                         <p className="text-base font-normal text-PaleCerulean">
-                            © All rights reserved. Made by{" "}
-                            <Link
-                                href="https://nextjs-templates.com/"
-                                className="hover:text-white"
-                                target="_blank"
-                            >
-                                NextJs Templates
+                            © All Rights Reserved by {' '}
+                            <Link href='/'>
+                                Feright Digital
                             </Link>
                         </p>
-                        <p className="text-base font-normal text-PaleCerulean">
+                        {/* <p className="text-base font-normal text-PaleCerulean">
                             Distributed by {" "}
                             <Link
                                 href="https://themewagon.com/"
@@ -139,13 +126,13 @@ const Footer: FC = () => {
                             >
                                 ThemeWagon
                             </Link>
-                        </p>
+                        </p> */}
                     </div>
-                    <div className="col-span-7 grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-                        <p className="text-xl text-PaleCerulean font-normal col-span-4">
-                            Subscribe Newsletter
+                    <div className=" items-center gap-6">
+                        <p className="text-base font-normal text-PaleCerulean">
+                            Desgined by <a href="https://yulanto.com" target="blank"><span className="text-[#ffffffd3]">Yulanto Web Creation</span></a>
                         </p>
-                        <div className="w-full col-span-8">
+                        {/* <div className="w-full col-span-8">
                             <form className="newsletter-form bg-white dark:bg-transparent flex rounded-md justify-end overflow-hidden rounded-tl-lg rounded-bl-lg">
                                 <input
                                     type="email"
@@ -159,7 +146,7 @@ const Footer: FC = () => {
                                     <span className="!border-0 !text-white">Subscribe</span>
                                 </button>
                             </form>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
