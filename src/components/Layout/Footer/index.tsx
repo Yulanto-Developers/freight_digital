@@ -27,7 +27,7 @@ const Footer: FC = () => {
                                 <Link href="/adverise">Advertise With Us</Link>
                             </li>
                             <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/contact">Contact</Link>
+                                <Link href="/contact">Contact Us</Link>
                             </li>
                         </ul>
                     </div>

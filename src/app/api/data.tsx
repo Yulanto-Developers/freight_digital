@@ -4,35 +4,33 @@ export const speakers = [
         src: "/images/service/ff.jpg",
         alt: "Freight forwarding",
         name: "Freight Forwarding",
-        designation: "End-to-end coordination of cargo movement across global routes with efficiency and reliability.",
+
     },
     {
         id: 2,
         src: "/images/service/cc.jpg",
         alt: "Customs clearance",
         name: "Customs Clearance",
-        designation: "Hassle-free documentation and compliance to ensure smooth import and export processes.",
+
     },
     {
         id: 3,
         src: "/images/service/is.jpg",
         alt: "International shipping",
         name: "International Shipping",
-        designation: "Fast and secure global shipping solutions tailored for businesses of all sizes.",
+
     },
     {
         id: 4,
         src: "/images/service/pcl.jpg",
         alt: "Project cargo logistics",
         name: "Project Cargo Logistics",
-        designation: "Specialized handling of oversized and complex cargo with expert planning and execution.",
     },
     {
         id: 5,
         src: "/images/service/wt.jpg",
         alt: "Warehousing and transportation",
         name: "Warehousing and Transportation",
-        designation: "Safe storage and efficient distribution solutions to streamline your supply chain.",
     },
 ];
 
@@ -46,7 +44,7 @@ export const conferences = [
         speakers: "Reena John & Lorance",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-1
+    },
     {
         title: "Local Business Global Event",
         profiles: [
@@ -55,7 +53,7 @@ export const conferences = [
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-2
+    },
     {
         title: "Frontiers Conference Perspectives",
         profiles: [
@@ -64,7 +62,7 @@ export const conferences = [
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-3
+    },
     {
         title: "A Focus Conference Initiatives",
         profiles: [
@@ -73,7 +71,7 @@ export const conferences = [
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-4
+    },
     {
         title: "Science and Beyond",
         profiles: [
@@ -83,7 +81,7 @@ export const conferences = [
         speakers: "Reena John & Lorance",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-5
+    },
     {
         title: "Global Event",
         profiles: [
@@ -92,7 +90,7 @@ export const conferences = [
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-6
+    },
     {
         title: "Cultural Exchange in the Digital Age",
         profiles: [
@@ -101,7 +99,7 @@ export const conferences = [
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-7
+    },
     {
         title: "Education for Tomorrow",
         profiles: [
@@ -110,18 +108,18 @@ export const conferences = [
         speakers: "Martin Luthar",
         buttonText: "Book Ticket",
         buttonLink: "/"
-    }, // Profile-8
+    },
 ];
 
 export const intermissions = [
     {
         title: "Coffee Break",
-        image: "/images/upcoming/alarm.svg",  // Path to the coffee break image
-        time: "10:00 - 10:30", // Time for the coffee break
+        image: "/images/upcoming/alarm.svg",
+        time: "10:00 - 10:30",
     },
     {
         title: "Lunch Time",
-        image: "/images/upcoming/alarm.svg",  // Path to the lunch break image
-        time: "12:30 - 13:30", // Time for the lunch break
+        image: "/images/upcoming/alarm.svg",
+        time: "12:30 - 13:30",
     },
 ];

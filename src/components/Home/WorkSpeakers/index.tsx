@@ -48,12 +48,9 @@ const WorkSpeakers = ({ showTitle = true }) => {
                 />
               </div>
               <div className="pt-6">
-                <h6 className="text-[24px] leading-[2.25rem] font-bold text-secondary dark:text-white">
+                <h6 className="text-[22px] leading-[2.25rem] font-bold text-secondary dark:text-white">
                   {speaker.name}
                 </h6>
-                <span className="text-md font-normal text-SlateBlueText dark:text-opacity-80">
-                  {speaker.designation}
-                </span>
               </div>
             </div>
           ))}

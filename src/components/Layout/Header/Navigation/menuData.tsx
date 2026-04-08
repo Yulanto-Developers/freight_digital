@@ -13,5 +13,5 @@ export const headerData: HeaderItem[] = [
   //   ],
   // },
   { label: "Advertise With Us", href: "/contact" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact Us", href: "/contact" },
 ];  

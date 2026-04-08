@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Globe, Megaphone, BarChart3, ListTree, Mail, Target } from 'lucide-react';
+import { Plane, Truck } from "lucide-react";
 
 const ServicesPage = () => {
     const services = [
@@ -51,7 +52,7 @@ const ServicesPage = () => {
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-gray-400 to-gray-600 bg-clip-text text-transparent">
                         Global Logistics Services
                     </h1>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                    <p className="text-center pb-6">
                         Elevate your logistics brand with data-driven marketing and global networking solutions designed for the modern shipping industry.
                     </p>
                 </div>
@@ -94,14 +95,32 @@ const ServicesPage = () => {
                 </div>
 
 
-                <div className="mt-20 p-[1px] bg-gradient-to-b from-blue-400/20 to-transparent rounded-3xl shadow-2xl border border-white/100 border-b-0 border-l-0  border-r-0 ">
+              
+                <div className="mt-20 p-[1px] bg-gradient-to-b from-blue-400/20 to-transparent rounded-3xl shadow-2xl border-t border-white/100">
+                    <div className="relative overflow-hidden rounded-[23px] p-12 text-center bg-[#0d1a2c]/40 backdrop-blur-2xl border-t border-blue-100/10 shadow-[inset_0_0_30px_rgba(59,130,246,0.05)]">
 
-                    <div className="relative overflow-hidden rounded-[23px] p-12 text-center bg-[#0d1a2c]/40 backdrop-blur-2xl border border-blue-100/10 shadow-[inset_0_0_30px_rgba(59,130,246,0.05)]">
-
-
+                        
                         <div className="absolute -top-24 -left-24 w-64 h-64 bg-blue-600/15 blur-[100px] rounded-full" />
                         <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-cyan-500/10 blur-[100px] rounded-full" />
 
+                       
+                        <div className="absolute top-10 right-10 md:right-24 opacity-30">
+                            <div className="animate-[pulse_5s_infinite]">
+                                <Plane className="text-white w-10 h-10 md:w-16 md:h-16 rotate-45 animate-[bounce_1.5s_infinite]" />
+                            </div>
+                        </div>
+
+                       
+                        <div className="absolute bottom-12 left-6 md:left-20 opacity-40">
+                            <div className="relative animate-[bounce_1.5s_infinite] flex flex-col items-center">
+                                <Truck className="text-white w-10 h-10 md:w-16 md:h-16 translate-x-2 animate-[pulse_3s_infinite]" />
+                                <div className="w-16 md:w-24 h-[2px] mt-1 bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent relative overflow-hidden">
+                                    <div className="absolute inset-0 w-full h-full border-t border-dashed border-cyan-400 animate-[pulse_1.5s_infinite]"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                     
                         <div className="relative z-10">
                             <h3 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-b from-white to-blue-200 bg-clip-text text-transparent tracking-tight">
                                 Ready to expand your global reach?
@@ -111,8 +130,11 @@ const ServicesPage = () => {
                                 Join the world's leading freight network and start promoting your services today.
                             </p>
 
-                            <Link href='/contact' className="px-12 py-4 bg-[#03203b] hover:bg-[rgb(0 58 113)] text-white font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] active:scale-95 border border-blue-100/30">
-                                Contact now!
+                            <Link
+                                href='/contact'
+                                className="px-12 py-4 bg-[#03203b] hover:bg-[#003a71] text-white font-bold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] active:scale-95 border border-blue-100/30"
+                            >
+                                Contact Now!
                             </Link>
                         </div>
                     </div>
