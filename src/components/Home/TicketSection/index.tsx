@@ -123,7 +123,11 @@ const TicketSection = () => {
 
 
                                 <div className="mt-auto text-center w-full">
-                                    <p className="text-3xl font-black leading-none italic">999.00</p>
+                                    <div className="flex flex-col justify-center">
+                                        <p className="text-[12px]  font-bold ">Buy for just</p>
+                                        <p className="text-3xl font-black leading-none italic">@999.00</p>
+                                    </div>
+
                                     <p className="text-[10px] uppercase font-bold tracking-widest mt-2 border-t border-[#0d1a2c] pt-1">
                                         Annual Subscription
                                     </p>
