@@ -36,7 +36,7 @@ export default function GrowthSection() {
                             At <span className="text-white font-bold">Freight Digital</span>, we believe every logistics company deserves strong online visibility and access to new business opportunities.
                         </p>
 
-                        <div className="flex flex-wrap gap-4">
+                        {/* <div className="flex flex-wrap gap-4">
                             <Link href='/contact'>
                                 <button className="px-8 py-4 bg-[#2C5378] hover:bg-blue-600 text-white font-black uppercase tracking-widest rounded-full transition-all flex items-center gap-3 group">
                                     Start Growing <ArrowRight className="group-hover:translate-x-2 transition-transform" />
@@ -47,7 +47,7 @@ export default function GrowthSection() {
                                     Our Strategies
                                 </button>
                             </Link>
-                        </div>
+                        </div> */}
                     </motion.div>
 
 

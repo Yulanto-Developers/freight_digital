@@ -6,14 +6,14 @@ import Banner from "@/components/Layout/Banner";
 import AboutSec from "@/components/about";
 import GrowthSection from "@/components/about/Growth";
 export const metadata: Metadata = {
-    title: "About | Symposium",
+    title: "About",
 };
 
 const page = () => {
-    const breadcrumbLinks = [
-        { href: "/", text: "Home" },
-        { href: "/about", text: "About" },
-    ];
+    // const breadcrumbLinks = [
+    //     { href: "/", text: "Home" },
+    //     { href: "/about", text: "About" },
+    // ];
     return (
         <>
             <Banner page='About Us' />
