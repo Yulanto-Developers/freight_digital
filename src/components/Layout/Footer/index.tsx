@@ -139,7 +139,7 @@ const Footer: FC = () => {
                     </div>
                     <div className=" items-center gap-6">
                         <p className="text-base font-normal text-white">
-                            Desgined by <a href="https://yulanto.com" target="blank"><span className="text-[#58595b]">Yulanto Web Creation</span></a>
+                            Designed by <a href="https://yulanto.com" target="blank"><span className="text-[#58595b]">Yulanto Web Creations</span></a>
                         </p>
                         {/* <div className="w-full col-span-8">
                             <form className="newsletter-form bg-white dark:bg-transparent flex rounded-md justify-end overflow-hidden rounded-tl-lg rounded-bl-lg">

@@ -34,7 +34,7 @@ const NewspaperIconSVG = () => (
 
 const TicketSection = () => {
     return (
-        <section className="dark:bg-[#b8babee0] -pt-3 font-sans">
+        <section className="dark:bg-[#58595b] -pt-3 font-sans">
             <div className="container px-4">
 
                 <div className="relative md:mx-auto mx-0 mt-10 md:mt-20 overflow-hidden lg:-mb-48 bg-[#fff]  border-1 border-[#fff] rounded-xl 
@@ -43,24 +43,24 @@ const TicketSection = () => {
 
 
                     <div className="absolute top-0 left-0 h-full w-8 flex flex-col justify-between p-1 z-10">
-                        <div className="w-6 h-6 bg-[#b8babee0] rounded-full -ml-3"></div>
-                        <div className="w-3 h-3 bg-[#b8babee0] rounded-full -ml-1.5 opacity-50"></div>
-                        <div className="w-6 h-6 bg-[#b8babee0] rounded-full -ml-3"></div>
-                        <div className="w-3 h-3 bg-[#b8babee0] rounded-full -ml-1.5 opacity-50"></div>
-                        <div className="w-6 h-6 bg-[#b8babee0] rounded-full -ml-3"></div>
-                        <div className="w-3 h-3 bg-[#b8babee0] rounded-full -ml-1.5 opacity-50"></div>
+                        <div className="w-6 h-6 bg-[#58595b] rounded-full -ml-3"></div>
+                        <div className="w-3 h-3 bg-[#58595b] rounded-full -ml-1.5 opacity-50"></div>
+                        <div className="w-6 h-6 bg-[#58595b] rounded-full -ml-3"></div>
+                        <div className="w-3 h-3 bg-[#58595b] rounded-full -ml-1.5 opacity-50"></div>
+                        <div className="w-6 h-6 bg-[#58595b] rounded-full -ml-3"></div>
+                        <div className="w-3 h-3 bg-[#f1651ae1] rounded-full -ml-1.5 opacity-50"></div>
                         <div className="w-6 h-6 bg-[#f1651ae1] rounded-full -ml-3"></div>
                     </div>
 
 
                     <div className="absolute top-0 -right-3 h-full w-8 flex flex-col justify-between p-1 z-10">
-                        <div className="w-6 h-6 bg-[#b8babee0] rounded-full -mr-3"></div>
-                        <div className="w-3 h-3 bg-[#b8babee0] rounded-full -mr-1.5 opacity-50"></div>
-                        <div className="w-6 h-6 bg-[#b8babee0] rounded-full -mr-3"></div>
-                        <div className="w-3 h-3 bg-[#b8babee0] rounded-full -mr-1.5 opacity-50"></div>
-                        <div className="w-6 h-6 bg-[#b8babee0] rounded-full -mr-3"></div>
-                        <div className="w-3 h-3 bg-[#b8babee0] rounded-full -mr-1.5 opacity-50"></div>
-                        <div className="w-6 h-6 bg-[#f1651ae1] rounded-full -mr-3"></div>
+                        <div className="w-6 h-6 bg-[#58595b] rounded-full -mr-3"></div>
+                        <div className="w-3 h-3 bg-[#58595b] rounded-full -mr-1.5 opacity-50"></div>
+                        <div className="w-6 h-6 bg-[#58595b] rounded-full -mr-3"></div>
+                        <div className="w-3 h-3 bg-[#58595b] rounded-full -mr-1.5 opacity-50"></div>
+                        <div className="w-6 h-6 bg-[#58595b] rounded-full -mr-3"></div>
+                        <div className="w-3 h-3 bg-[#f1651a79] rounded-full -mr-1.5 opacity-50"></div>
+                        <div className="w-6 h-6 bg-[#f1651a00] rounded-full -mr-3"></div>
                     </div>
 
 
