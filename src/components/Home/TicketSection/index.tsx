@@ -39,7 +39,7 @@ const TicketSection = () => {
 
                 <div className="relative md:mx-auto mx-0 mt-10 md:mt-20 overflow-hidden lg:-mb-48 bg-[#fff]  border-1 border-[#fff] rounded-xl 
                                 [clip-path:polygon(30px_0%,calc(100%_-_30px)_0%,100%_30px,100%_calc(100%_-_30px),calc(100%_-_30px)_100%,30px_100%,0%_calc(100%_-_30px),0%_30px)]
-                                before:content-[''] before:absolute before:inset-0 before:bg-[url('/images/paper-texture.png')] before:opacity-20 hover:translate-y-2 translate">
+                                before:content-[''] before:absolute before:inset-0 before:bg-[url('/images/paper-texture.png')] before:opacity-20 hover:translate-y-2">
 
 
                     <div className="absolute top-0 left-0 h-full w-8 flex flex-col justify-between p-1 z-10">
