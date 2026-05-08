@@ -5,7 +5,7 @@ import ThumbnailCarousel from "../ThumbnailCarousel";
 const Conferences = () => {
   return (
     <>
-      <section className="bg-IcyBreeze dark:bg-darklight relative overflow-hidden before:absolute before:content-[''] before:bg-PaleSkyBlu before:dark:bg-secondary before:w-687 before:h-687 before:-bottom-1/2 before:rounded-full before:xl:inline-block before:hidden">
+      <section className="bg-IcyBreeze dark:bg-[#fff] relative overflow-hidden before:absolute before:content-[''] before:bg-PaleSkyBlu before:dark:bg-secondary before:w-687 before:h-687 before:-bottom-1/2 before:rounded-full before:xl:inline-block before:hidden">
         <div className="container">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center lg:gap-24 gap-5">
             <div
@@ -21,14 +21,14 @@ const Conferences = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-white rounded-xl tracking-wider text-[#0D1A2C]">Welcome to </span>
-              <h2 className="uppercase">freight digital</h2>
-              <p className="text-lg font-normal text-justify text-SlateBlueText dark:text-opacity-80 max-w-506 md:pt-3 pt-5 md:pb-10 pb-6">
+              <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-[#58595B] rounded-xl tracking-wider text-[#fff]">Welcome to </span>
+              <h2 className="uppercase text-[#F1671A]">freight digital</h2>
+              <p className="text-lg font-normal text-justify text-[#58595B] dark:text-opacity-90 max-w-506 md:pt-3 pt-5 md:pb-10 pb-6">
                 Freight Digital is a specialized marketing platform designed exclusively for the logistics sector, including freight forwarders, shipping companies, and IATA agents. Leveraging deep industry expertise, they help businesses like customs brokers and warehouse providers enhance their digital presence and drive growth.
               </p>
               <Link
                 href="/about"
-                className="btn_outline btn-2 hover-outline-slide-down"
+                className="btn_outline btn-3 hover-outline-slide-down"
               >
                 <span>Read more</span>
               </Link>

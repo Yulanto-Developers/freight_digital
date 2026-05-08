@@ -13,7 +13,7 @@ const NextArrow = (props: any) => {
     return (
         <button
             onClick={onClick}
-            className="absolute -right-4 md:-right-10 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-white/[0.05] backdrop-blur-md border border-white/10 text-white hover:bg-blue-600 hover:border-blue-500 transition-all group shadow-xl"
+            className="absolute -right-4 md:-right-10 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-[#58595b] backdrop-blur-md border border-white/20 text-white hover:bg-[#56595b] hover:border-white transition-all group shadow-xl"
             aria-label="Next Slide"
         >
             <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
@@ -26,7 +26,7 @@ const PrevArrow = (props: any) => {
     return (
         <button
             onClick={onClick}
-            className="absolute -left-4 md:-left-10 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-white/[0.05] backdrop-blur-md border border-white/10 text-white hover:bg-blue-600 hover:border-blue-500 transition-all group shadow-xl"
+            className="absolute -left-4 md:-left-10 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-[#58595b] backdrop-blur-md border border-white/20 text-white hover:bg-[#56595b] hover:border-white transition-all group shadow-xl"
             aria-label="Previous Slide"
         >
             <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
@@ -77,12 +77,12 @@ const Testimonials = () => {
         autoplay: true,
         autoplaySpeed: 5000,
         customPaging: (i: number) => (
-            <div className="w-2 h-2 mx-2 bg-blue-600/30 rounded-full hover:bg-blue-500 transition-all dot-active"></div>
+            <div className="w-2 h-2 mx-2 bg-[#58595b] rounded-full hover:bg-[#56595B] transition-all dot-active"></div>
         ),
     };
 
     return (
-        <section className="relative pb-24 pt-14 bg-[#0d1a2c] overflow-hidden">
+        <section className="relative pb-24 pt-14 bg-[#F1671A] overflow-hidden">
             {/* Glow effects */}
             <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-10" />
 
@@ -92,11 +92,11 @@ const Testimonials = () => {
                     <h3 className="text-4xl md:text-5xl font-bold text-white">What Our Attendees Say</h3>
                 </div>
 
-                <div className="max-w-4xl mx-auto relative px-4 md:px-0">
+                <div className="max-w-4xl mx-auto relative px-4 md:px-0 bg-transparent ">
                     <Slider {...settings} className="testimonial-slider mb-20">
                         {testimonials.map((item, index) => (
                             <div key={index} className="outline-none">
-                                <div className="relative p-8 md:p-16 rounded-[40px] bg-white/[0.03] backdrop-blur-xl border border-white/10 shadow-2xl overflow-hidden">
+                                <div className="relative p-8 md:p-16 rounded-[40px]  bg-white/[0.03] backdrop-blur-xl border border-[#fff] shadow-2xl overflow-hidden">
                                     <Quote className="absolute top-10 left-10 w-32 h-32 text-white/[0.03] -z-10" />
 
                                     <div className="flex flex-col items-center text-center">
@@ -108,18 +108,18 @@ const Testimonials = () => {
                                             ))}
                                         </div>
 
-                                        <p className="text-xl md:text-2xl leading-relaxed text-blue-100/80 italic mb-10">
+                                        <p className="text-xl md:text-2xl leading-relaxed text-[#fff] italic mb-10">
                                             "{item.content}"
                                         </p>
 
                                         <div className="flex flex-col items-center">
-                                            <div className="relative w-20 h-20 mb-4 p-1 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 shadow-lg">
+                                            <div className="relative w-20 h-20 mb-4 p-1 rounded-full bg-[#58595b] shadow-lg">
                                                 <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-[#0d1a2c]">
                                                     <Image src={item.profilePic} alt={item.name} fill className="object-cover" />
                                                 </div>
                                             </div>
                                             <h4 className="text-xl font-bold text-white">{item.name}</h4>
-                                            <p className="text-blue-400 text-sm font-medium">{item.role}</p>
+                                            <p className="text-[#58595b] text-[14px] font-medium">{item.role}</p>
                                         </div>
                                     </div>
                                 </div>

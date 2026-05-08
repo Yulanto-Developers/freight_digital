@@ -9,20 +9,20 @@ const WorkSpeakers = ({ showTitle = true }) => {
   const pathname = usePathname();
   return (
     <>
-      <section className={` dark:bg-darkmode ${pathname === "/" ? "" : ""}`}>
+      <section className={` dark:bg-[#F1671A] ${pathname === "/" ? "" : ""}`}>
         {showTitle && (
           <div className="flex flex-col justify-center items-center">
-            <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-white rounded-xl tracking-wider text-[#0D1A2C] text-center">Industry Understanding</span>
-            <h2 className="text-center pb-12">Your Growth with FreightDigital</h2>
+            <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-[#58595B] rounded-xl tracking-wider text-[#fff] text-center">Industry Understanding</span>
+            <h2 className="text-center text-[#58595B] pb-12">Your Growth with FreightDigital</h2>
 
           </div>
         )}
-       
-            <div className="text-center md:pb-20 pb-8">
 
-              <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="text-SlateBlueText dark:text-opacity-80 text-lg font-normal max-w-920 m-auto">
-                The logistics industry is highly competitive and relationship-driven. Many freight forwarding companies still rely on traditional methods such as referrals and agent networks to gain business. Freight Digital helps logistics companies take advantage of these opportunities by building strong digital strategies that improve online visibility and generate qualified business inquiries.
-             
+        <div className="text-center md:pb-20 pb-8">
+
+          <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="text-[#ffffff] dark:text-opacity-90 text-lg font-normal max-w-920 m-auto">
+            The logistics industry is highly competitive and relationship-driven. Many freight forwarding companies still rely on traditional methods such as referrals and agent networks to gain business. Freight Digital helps logistics companies take advantage of these opportunities by building strong digital strategies that improve online visibility and generate qualified business inquiries.
+
           </p>
         </div>
         <div className="grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 items-stretch gap-8 mx-7">

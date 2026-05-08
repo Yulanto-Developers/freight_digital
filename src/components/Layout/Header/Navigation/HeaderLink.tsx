@@ -4,7 +4,12 @@ import Link from 'next/link';
 import { HeaderItem } from '../../../../types/menu';
 import { usePathname } from 'next/navigation';
 
-const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
+// interface HeaderLinkProps {
+//   item: HeaderItem;
+//   sticky: boolean;
+// }
+
+const HeaderLink: React.FC<{ item: HeaderItem, sticky: HeaderItem }> = ({ item, sticky }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname()
   const handleMouseEnter = () => {
@@ -19,11 +24,25 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
 
   return (
     <li
-      className={`${item.submenu ? "relative":""} ${item.label === "Speakers" ? 'xl:block hidden' : "block"}`}
+      className={`${item.submenu ? "relative" : ""} ${item.label === "Speakers" ? 'xl:block hidden' : "block"}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link href={item.href} className={`text-base text-MidnightNavyText py-3 dark:text-white flex font-normal hover:text-primary dark:hover:text-primary ${path === item.href ? 'text-primary dark:!text-primary' : ' text-black dark:text-white '} ${path.startsWith(`/${item.label.toLowerCase()}`) ? 'text-primary dark:!text-primary' : null}`}>
+      <Link
+        href={item.href}
+        className={`
+    text-base py-3 flex font-semibold transition-all duration-300
+    dark:hover:text-[#F1671A]
+
+    ${path === item.href ||
+            path.startsWith(`/${item.label.toLowerCase()}`)
+            ? "text-[#F1671A]"
+            : sticky
+              ? "text-[#58595B]"
+              : "text-white"
+          }
+  `}
+      >
         {item.label}
         {item.submenu && (
           <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
@@ -41,11 +60,10 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
             <Link
               key={index}
               href={subItem.href}
-              className={`block px-4 py-2 text-[15px]  ${
-                path === subItem.href
-                  ? "bg-primary text-white"
-                  : "text-black hover:bg-gray-100 dark:hover:bg-secondary dark:text-white hover:text-dark dark:hover:text-white"
-              }`}
+              className={`block px-4 py-2 text-[15px]  ${path === subItem.href
+                ? "bg-primary text-white"
+                : "text-black hover:bg-gray-100 dark:hover:bg-secondary dark:text-white hover:text-dark dark:hover:text-white"
+                }`}
             >
               {subItem.label}
             </Link>

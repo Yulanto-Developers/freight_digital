@@ -4,29 +4,38 @@ import Image from "next/image";
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-secondary">
+        <footer className="bg-[#58595B]">
             <div className="container">
-                <div className="flex items-center justify-between flex-wrap md:pt-44 pt-16 md:pb-20 pb-6 border-b border-solid border-dark_border">
+                <div className="flex items-center justify-between flex-wrap md:pt-44 pt-16 md:pb-20 pb-6 border-b border-solid border-[#f1671a]">
                     <div>
                         <Link href="/">
-                            <p className="text-2xl font-black italic">FREIGHT DIGITAL</p>
+                            <Image
+                                src="/images/footer/Logo-white-1.png"
+                                width={0}
+                                height={0}
+                                quality={100}
+                                layout="responsive"
+                                style={{ width: '100px', height: '100px' }}
+
+                                alt="Footer-logo"
+                            />
                         </Link>
                     </div>
                     <div>
                         <ul className="flex items-center flex-wrap md:gap-30 gap-3 md:py-0 py-5">
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                            <li className="hover:text-[#f1671a] sm:text-xl text-lg font-normal transition-all duration-0.4s text-white">
                                 <Link href="/">Home</Link>
                             </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                            <li className="hover:text-[#f1671a] sm:text-xl text-lg font-normal transition-all duration-0.4s text-white">
                                 <Link href="/about">About Us</Link>
                             </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                            <li className="hover:text-[#f1671a] sm:text-xl text-lg font-normal transition-all duration-0.4s text-white">
                                 <Link href="/services">Our Services</Link>
                             </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                            <li className="hover:text-[#f1671a] sm:text-xl text-lg font-normal transition-all duration-0.4s text-white">
                                 <Link href="/adverise">Advertise With Us</Link>
                             </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
+                            <li className="hover:text-[#f1671a] sm:text-xl text-lg font-normal transition-all duration-0.4s text-white">
                                 <Link href="/contact">Contact Us</Link>
                             </li>
                         </ul>
@@ -38,9 +47,9 @@ const Footer: FC = () => {
                                     <svg
                                         width="26"
                                         height="27"
-                                        fill="white"
+                                        fill="#f1671a"
                                         viewBox="0 0 26 27"
-                                        className="group-hover:fill-ElectricAqua"
+                                        className="group-hover:fill-white"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clipPath="url(#clip0_7_993)">
@@ -65,8 +74,8 @@ const Footer: FC = () => {
                                         width="26"
                                         height="27"
                                         viewBox="0 0 26 27"
-                                        fill="#fff"
-                                        className="group-hover:fill-ElectricAqua"
+                                        fill="#f1671a"
+                                        className="group-hover:fill-white"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clipPath="url(#clip0_7_995)">
@@ -91,8 +100,8 @@ const Footer: FC = () => {
                                         width="26"
                                         height="28"
                                         viewBox="0 0 26 28"
-                                        fill="#fff"
-                                        className="group-hover:fill-ElectricAqua"
+                                        fill="#f1671a"
+                                        className="group-hover:fill-white"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clipPath="url(#clip0_7_997)">
@@ -130,7 +139,7 @@ const Footer: FC = () => {
                     </div>
                     <div className=" items-center gap-6">
                         <p className="text-base font-normal text-PaleCerulean">
-                            Desgined by <a href="https://yulanto.com" target="blank"><span className="text-[#ffffffd3]">Yulanto Web Creation</span></a>
+                            Desgined by <a href="https://yulanto.com" target="blank"><span className="text-[#f1671a]">Yulanto Web Creation</span></a>
                         </p>
                         {/* <div className="w-full col-span-8">
                             <form className="newsletter-form bg-white dark:bg-transparent flex rounded-md justify-end overflow-hidden rounded-tl-lg rounded-bl-lg">
