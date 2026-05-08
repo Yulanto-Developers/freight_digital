@@ -49,13 +49,13 @@ export default function HeroSlider() {
 
                         {/* Content Container */}
                         <div className="container relative z-10 flex flex-col justify-center px-6">
-                            <div className="max-w-3xl slide-content md:py-20">
+                            <div className="max-w-3xl slide-content md:py-25">
                                 {/* chuma space purpose */}
                                 <span className={`inline-block px-5 py-1.5 rounded-full text-xs font-black uppercase   mb-8 shadow-lg`}>
                                     {slide.tag ?? ''}
                                 </span>
 
-                                <h1 className="text-6xl md:text-[4rem] font-black text-white leading-[1.05] mb-8 drop-shadow-2xl whitespace-pre-line">
+                                <h1 className="text-6xl md:text-[4rem] md:mt-36 font-black text-white leading-[1.05] mb-8 drop-shadow-2xl whitespace-pre-line">
                                     {slide.title}
                                 </h1>
 
@@ -63,7 +63,7 @@ export default function HeroSlider() {
                                     {slide.desc}
                                 </p>
 
-                                <div className="flex flex-wrap gap-6">
+                                <div className="flex flex-wrap gap-6 mb-5">
                                     <Link href="/services" className="px-10 py-5 bg-white text-slate-900 font-bold rounded-2xl hover:bg-blue-50 transition-all duration-300 shadow-2xl hover:-translate-y-1">
                                         Our Solutions
                                     </Link>

@@ -39,7 +39,7 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({ item, sticky }) => {
             ? "text-[#F1671A]"
             : sticky
               ? "text-[#58595B]"
-              : "text-white"
+              : "text-[#58595B]"
           }
   `}
       >

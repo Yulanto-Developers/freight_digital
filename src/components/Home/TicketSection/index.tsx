@@ -37,9 +37,9 @@ const TicketSection = () => {
         <section className="dark:bg-[#b8babee0] -pt-3 font-sans">
             <div className="container px-4">
 
-                <div className="relative md:mx-auto mx-0 mt-10 md:mt-20 overflow-hidden lg:-mb-48 bg-[#fff]  border-1 border-[#fff] rounded-xl shadow-lg
+                <div className="relative md:mx-auto mx-0 mt-10 md:mt-20 overflow-hidden lg:-mb-48 bg-[#fff]  border-1 border-[#fff] rounded-xl 
                                 [clip-path:polygon(30px_0%,calc(100%_-_30px)_0%,100%_30px,100%_calc(100%_-_30px),calc(100%_-_30px)_100%,30px_100%,0%_calc(100%_-_30px),0%_30px)]
-                                before:content-[''] before:absolute before:inset-0 before:bg-[url('/images/paper-texture.png')] before:opacity-20">
+                                before:content-[''] before:absolute before:inset-0 before:bg-[url('/images/paper-texture.png')] before:opacity-20 hover:translate-y-2 translate shadow-lg shadow-black">
 
 
                     <div className="absolute top-0 left-0 h-full w-8 flex flex-col justify-between p-1 z-10">
@@ -49,7 +49,7 @@ const TicketSection = () => {
                         <div className="w-3 h-3 bg-[#b8babee0] rounded-full -ml-1.5 opacity-50"></div>
                         <div className="w-6 h-6 bg-[#b8babee0] rounded-full -ml-3"></div>
                         <div className="w-3 h-3 bg-[#b8babee0] rounded-full -ml-1.5 opacity-50"></div>
-                        <div className="w-6 h-6 bg-[#58595B] rounded-full -ml-3"></div>
+                        <div className="w-6 h-6 bg-[#f1651ae1] rounded-full -ml-3"></div>
                     </div>
 
 
@@ -60,12 +60,12 @@ const TicketSection = () => {
                         <div className="w-3 h-3 bg-[#b8babee0] rounded-full -mr-1.5 opacity-50"></div>
                         <div className="w-6 h-6 bg-[#b8babee0] rounded-full -mr-3"></div>
                         <div className="w-3 h-3 bg-[#b8babee0] rounded-full -mr-1.5 opacity-50"></div>
-                        <div className="w-6 h-6 bg-[#58595B] rounded-full -mr-3"></div>
+                        <div className="w-6 h-6 bg-[#f1651ae1] rounded-full -mr-3"></div>
                     </div>
 
 
 
-                    <div className="flex md:flex-row flex-col">
+                    <div className="flex md:flex-row flex-col ">
 
 
                         <div className="md:w-3/4 w-full md:p-12 p-8 md:pr-4 relative border-r-2 border-dashed ">

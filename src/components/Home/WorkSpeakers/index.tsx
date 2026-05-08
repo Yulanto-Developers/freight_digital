@@ -9,11 +9,11 @@ const WorkSpeakers = ({ showTitle = true }) => {
   const pathname = usePathname();
   return (
     <>
-      <section className={` dark:bg-[#F1671A] ${pathname === "/" ? "" : ""}`}>
+      <section className={` dark:bg-[#58595b] ${pathname === "/" ? "" : ""}`}>
         {showTitle && (
           <div className="flex flex-col justify-center items-center">
-            <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-[#58595B] rounded-xl tracking-wider text-[#fff] text-center">Industry Understanding</span>
-            <h2 className="text-center text-[#58595B] pb-12">Your Growth with FreightDigital</h2>
+            <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-[#f1671a] rounded-xl tracking-wider text-[#fff] text-center">Industry Understanding</span>
+            <h2 className="text-center text-[#fff] pb-12">Your Growth with Freight Digital</h2>
 
           </div>
         )}

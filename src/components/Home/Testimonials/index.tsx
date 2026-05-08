@@ -82,21 +82,21 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="relative pb-24 pt-14 bg-[#F1671A] overflow-hidden">
+        <section className="relative pb-24 pt-14 bg-[#fff] overflow-hidden">
             {/* Glow effects */}
             <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-10" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-16">
-                    <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-white rounded-xl tracking-wider text-[#0D1A2C] text-center">Our Happy Clients!</span>
-                    <h3 className="text-4xl md:text-5xl font-bold text-white">What Our Attendees Say</h3>
+                    <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-[#58595b] rounded-xl tracking-wider text-[#fff] text-center">Our Happy Clients!</span>
+                    <h3 className="text-4xl md:text-5xl font-bold text-[#f1671a]">What Our Attendees Say</h3>
                 </div>
 
                 <div className="max-w-4xl mx-auto relative px-4 md:px-0 bg-transparent ">
                     <Slider {...settings} className="testimonial-slider mb-20">
                         {testimonials.map((item, index) => (
                             <div key={index} className="outline-none">
-                                <div className="relative p-8 md:p-16 rounded-[40px]  bg-white/[0.03] backdrop-blur-xl border border-[#fff] shadow-2xl overflow-hidden">
+                                <div className="relative p-8 md:p-16 rounded-[40px]  bg-[#58595b] backdrop-blur-xl border border-[#58595b] shadow-2xl overflow-hidden">
                                     <Quote className="absolute top-10 left-10 w-32 h-32 text-white/[0.03] -z-10" />
 
                                     <div className="flex flex-col items-center text-center">
@@ -119,7 +119,7 @@ const Testimonials = () => {
                                                 </div>
                                             </div>
                                             <h4 className="text-xl font-bold text-white">{item.name}</h4>
-                                            <p className="text-[#58595b] text-[14px] font-medium">{item.role}</p>
+                                            <p className="text-[#fff] text-[14px] font-medium">{item.role}</p>
                                         </div>
                                     </div>
                                 </div>

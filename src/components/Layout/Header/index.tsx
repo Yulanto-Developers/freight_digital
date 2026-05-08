@@ -72,7 +72,7 @@ const Header: React.FC = () => {
     <>
       {/* <div className="relative"></div> */}
       <header
-        className={`fixed h-36 top-0 py-1 z-50 w-full bg-transparent transition-all  ${sticky ? "shadow-lg dark:shadow-darkmd bg-white" : "shadow-none"
+        className={`fixed h-36 top-0 py-1 z-50 w-full bg-white transition-all  ${sticky ? "shadow-lg dark:shadow-darkmd bg-white" : "shadow-none"
           }`}
       >
         <div className="container">
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
               <Link
                 href="tel:+911234567890"
                 className={`hidden lg:block btn_outline  hover-outline-slide-down rounded-lg 
-                  ${sticky ? "btn-3" : "btn-2"}`}
+                  ${sticky ? "btn-3" : "btn-3"}`}
               >
                 <span className="!py-2 !px-4">+91 12345 67890</span>
               </Link>
