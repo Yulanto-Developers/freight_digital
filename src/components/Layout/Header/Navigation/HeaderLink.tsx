@@ -4,12 +4,12 @@ import Link from 'next/link';
 import { HeaderItem } from '../../../../types/menu';
 import { usePathname } from 'next/navigation';
 
-// interface HeaderLinkProps {
-//   item: HeaderItem;
-//   sticky: boolean;
-// }
+interface HeaderLinkProps {
+  item: HeaderItem;
+  sticky: boolean;
+}
 
-const HeaderLink: React.FC<{ item: HeaderItem, sticky: HeaderItem }> = ({ item, sticky }) => {
+const HeaderLink: React.FC<HeaderLinkProps> = ({ item, sticky }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname()
   const handleMouseEnter = () => {

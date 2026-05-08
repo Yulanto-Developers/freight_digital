@@ -7,5 +7,5 @@ export type HeaderItem = {
   label: string;
   href: string;
   submenu?: SubmenuItem[];
-  sticky: boolean;
+
 };
