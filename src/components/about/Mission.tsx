@@ -31,7 +31,7 @@ export default function MissionVision() {
     return (
         <section className="py-20  flex flex-col items-center justify-center overflow-hidden relative min-h-screen">
 
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#2C5378]/10 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#58595b]/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10 flex flex-col items-center">
@@ -49,7 +49,7 @@ export default function MissionVision() {
                             {!isFlipped && (
                                 <motion.div
                                     layoutId="activeTab"
-                                    className="absolute inset-0 bg-[#2C5378] rounded-lg -z-10 shadow-lg"
+                                    className="absolute inset-0 bg-[#f1671a] rounded-lg -z-10 shadow-lg"
                                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                                 />
                             )}
@@ -63,15 +63,15 @@ export default function MissionVision() {
                             {isFlipped && (
                                 <motion.div
                                     layoutId="activeTab"
-                                    className="absolute inset-0 bg-[#2C5378] rounded-lg -z-10 shadow-lg"
+                                    className="absolute inset-0 bg-[#f1671a] rounded-lg -z-10 shadow-lg"
                                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                                 />
                             )}
                         </button>
                     </div>
 
-                    <h2 className="text-5xl md:text-6xl font-black text-white tracking-tighter uppercase">
-                        Our <span className="text-[#2C5378]">Goals</span>
+                    <h2 className="text-5xl md:text-6xl font-black text-[#58595b] tracking-tighter uppercase">
+                        Our <span className="text-[#f1671a]">Goals</span>
                     </h2>
                 </div>
 
@@ -88,7 +88,7 @@ export default function MissionVision() {
 
 
                         <div
-                            className="absolute inset-0 w-full h-full bg-[#0f172a] border-2 border-slate-800 rounded-[3rem] p-8 md:p-14 flex flex-col justify-between shadow-2xl overflow-hidden"
+                            className="absolute inset-0 w-full h-full bg-[#58595b] border-2 border-slate-800 rounded-[3rem] p-8 md:p-14 flex flex-col justify-between shadow-2xl overflow-hidden"
                             style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}
                         >
 
@@ -107,7 +107,7 @@ export default function MissionVision() {
 
 
                         <div
-                            className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#1e293b] to-[#080d17] border-2 border-[#2C5378]/50 rounded-[3rem] p-8 md:p-14 flex flex-col justify-between shadow-2xl overflow-hidden"
+                            className="absolute inset-0 w-full h-full bg-[#58595b] border-2 border-[#2C5378]/50 rounded-[3rem] p-8 md:p-14 flex flex-col justify-between shadow-2xl overflow-hidden"
                             style={{
                                 backfaceVisibility: 'hidden',
                                 WebkitBackfaceVisibility: 'hidden',
@@ -116,9 +116,9 @@ export default function MissionVision() {
                         >
 
                             <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
-                                style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235ba3e3' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E")` }}
+                                style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='#f1671a' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E")` }}
                             />
-                            <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#2C5378]/20 rounded-full blur-[80px]" />
+                            <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#f1651a00] rounded-full blur-[80px]" />
 
                             <div className="relative z-10">
                                 <CardHeader icon={<Eye size={32} strokeWidth={2.5} />} number="02" title={data[1].title} />
@@ -131,7 +131,7 @@ export default function MissionVision() {
                                 leftText="Back to Mission"
                                 rightIcon={
                                     <div className="flex gap-1">
-                                        <div className="w-2 h-2 rounded-full bg-[#2C5378]" />
+                                        <div className="w-2 h-2 rounded-full bg-[#f1671a]" />
                                         <div className="w-8 h-2 rounded-full bg-[#2C5378]" />
                                     </div>
                                 }
@@ -152,7 +152,7 @@ export default function MissionVision() {
 
 const CardHeader = ({ icon, number, title }: { icon: React.ReactNode, number: string, title: string }) => (
     <div className="flex justify-between items-start mb-6 md:mb-8">
-        <div className="p-4 bg-[#2C5378]/20 rounded-2xl border border-[#2C5378]/50 text-[#5ba3e3]">
+        <div className="p-4 bg-[#fff]/20 rounded-2xl border border-[#fff] text-[#5ba3e3]">
             {icon}
         </div>
         <span className="text-white/10 font-black text-6xl uppercase italic select-none">{number}</span>
@@ -161,7 +161,7 @@ const CardHeader = ({ icon, number, title }: { icon: React.ReactNode, number: st
 
 const DescriptionOne = ({ text }: { text: string }) => (
     <h3 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter mb-4 md:mb-6">
-        <p className="text-slate-300 text-base md:text-lg leading-relaxed font-medium italic border-l-4 border-[#2C5378] pl-5 mt-4 normal-case tracking-normal">
+        <p className="text-white text-base md:text-lg leading-relaxed font-medium italic border-l-4 border-[#f1671a] pl-5 mt-4 normal-case tracking-normal">
             "{text}"
         </p>
     </h3>
@@ -175,10 +175,10 @@ const DescriptionList = ({ desc2, desc3 }: { desc2: string, desc3: string }) => 
                 className="group/item flex items-start gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/[0.05] hover:bg-white/[0.06] hover:border-[#2C5378]/40 transition-all"
             >
 
-                <div className="mt-2 flex-shrink-0 w-2 h-2 rounded-full bg-[#5ba3e3] shadow-[0_0_10px_rgba(91,163,227,0.5)]" />
+                <div className="mt-2 flex-shrink-0 w-2 h-2 rounded-full bg-[#f1671a] shadow-[0_0_10px_rgba(91,163,227,0.5)]" />
 
 
-                <p className="text-slate-300 text-base md:text-[14px] leading-relaxed font-medium">
+                <p className="text-white text-base md:text-[14px] leading-relaxed font-medium">
                     {text}
                 </p>
             </div>
@@ -188,9 +188,9 @@ const DescriptionList = ({ desc2, desc3 }: { desc2: string, desc3: string }) => 
 
 const CardFooter = ({ leftIcon, leftText, rightIcon }: { leftIcon: React.ReactNode, leftText: string, rightIcon: React.ReactNode }) => (
     <div className="relative z-10 flex items-center justify-between mt-auto pt-4 border-t border-white/5">
-        <div className="flex items-center gap-2 text-slate-500 text-[12px] font-bold uppercase tracking-widest">
+        <div className="flex items-center gap-2 text-[#f1671a] text-[12px] font-bold uppercase tracking-widest">
             {leftIcon} {leftText}
         </div>
-        <div className="text-slate-700">{rightIcon}</div>
+        <div className="text-[#f1671a]">{rightIcon}</div>
     </div>
 );
