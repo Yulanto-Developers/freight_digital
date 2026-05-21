@@ -1,8 +1,8 @@
 import React from "react";
-import BlogList from "@/components/Blog/BlogList";
-import HeroSub from "@/components/SharedComponent/HeroSub";
+// import BlogList from "@/components/Blog/BlogList";
+// import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
-import TicketSection from "@/components/Home/TicketSection";
+// import TicketSection from "@/components/Home/TicketSection";
 export const metadata: Metadata = {
   title: "Blog | Symposium",
 };
@@ -14,13 +14,13 @@ const BlogPage = () => {
     ];
     return (
         <>
-            <HeroSub
+            {/* <HeroSub
                 title="Blog"
                 description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
                 breadcrumbLinks={breadcrumbLinks}
             />
-            <BlogList />
-            <TicketSection/>
+            <BlogList /> */}
+            {/* <TicketSection/> */}
         </>
     );
 };

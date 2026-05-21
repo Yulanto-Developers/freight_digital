@@ -1,5 +1,5 @@
 
-import { Documentation } from "@/components/Documentation/Documentation";
+// import { Documentation } from "@/components/Documentation/Documentation";
 import TicketSection from "@/components/Home/TicketSection";
 import { Metadata } from "next";
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-        <Documentation/>
+        {/* <Documentation/> */}
         <TicketSection/>
         </>
     );
