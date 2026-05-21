@@ -1,5 +1,5 @@
 import React from "react";
-import BoxSlider from "../../SharedComponent/BoxSlider";
+// import BoxSlider from "../../SharedComponent/BoxSlider";
 import Image from "next/image";
 import Link from "next/link";
 import { conferences } from "../../../app/api/data";
@@ -13,7 +13,7 @@ const Upcoming = () => {
             <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" className="text-center pb-10">Upcoming Conference</h2>
             <div>
               <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                <BoxSlider />
+                {/* <BoxSlider /> */}
               </div>
               <div>
                 <div className="flex items-center flex-wrap w-full border border-solid  dark:border-dark_border md:px-14 px-6 md:mt-14 mt-6 rounded-22">
