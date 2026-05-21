@@ -2,11 +2,12 @@ import ContactForm from "@/components/Contact/Form";
 import ContactInfo from "@/components/Contact/ContactInfo";
 import Location from "@/components/Contact/OfficeLocation";
 import React from "react";
-import HeroSub from "@/components/SharedComponent/HeroSub";
+// import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
 import TicketSection from "@/components/Home/TicketSection";
+import Banner from "@/components/Layout/Banner";
 export const metadata: Metadata = {
-    title: "Contact | Symposium",
+  title: "Contact | Symposium",
 };
 
 const page = () => {
@@ -16,15 +17,11 @@ const page = () => {
   ];
   return (
     <>
-      <HeroSub
-        title="Contact Us"
-        description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
-        breadcrumbLinks={breadcrumbLinks}
-      />
+      <Banner page='Contact Us' url='/images/banner/b-460.jpg' />
       <ContactInfo />
       <ContactForm />
-      <Location />
-      <TicketSection/>
+      {/* <Location /> */}
+      <TicketSection />
     </>
   );
 };

@@ -16,7 +16,7 @@ const page = () => {
     // ];
     return (
         <>
-            <Banner page='Our Service' />
+            <Banner page='Our Service' url='/images/banner/b-470.jpg' />
             <ServicesSection />
             <IndustriesServed />
             <TicketSection />

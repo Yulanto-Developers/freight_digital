@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogCard from '@/components/SharedComponent/Blog/blogCard';
+import BlogCard from '@/components/c-trash/Blog/blogCard';
 import { getAllPosts } from "@/utils/markdown";
 
 const BlogList: React.FC = () => {

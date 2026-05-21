@@ -3,14 +3,15 @@ import Link from 'next/link';
 
 interface BannerProps {
     page: string;
+    url: string
 }
 
-export default function Banner({ page }: BannerProps) {
+export default function Banner({ page,url }: BannerProps) {
     return (
         <section className="relative w-full h-[80vh]  overflow-hidden flex items-center justify-start">
 
             <Image
-                src="/images/banner/b-450.jpg"
+                src={url}
                 alt="Banner Display"
                 fill
                 priority
