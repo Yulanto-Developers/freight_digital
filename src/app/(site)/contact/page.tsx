@@ -17,6 +17,7 @@ const page = () => {
   ];
   return (
     <>
+
       <Banner page='Contact Us' url='/images/banner/contact-us.jpg' />
       <ContactInfo />
       <ContactForm />

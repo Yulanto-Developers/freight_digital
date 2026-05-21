@@ -3,19 +3,20 @@ import Link from 'next/link';
 
 interface BannerProps {
     page: string;
-    url: string
+    url: string;
+    
 }
 
 export default function Banner({ page,url }: BannerProps) {
     return (
-        <section className="relative w-full h-[80vh]  overflow-hidden flex items-center justify-start">
+        <section className="relative w-full h-[60vh] mt-28 overflow-hidden flex items-center justify-start">
 
             <Image
                 src={url}
                 alt="Banner Display"
                 fill
                 priority
-                className=""
+                className="top-60"
             />
 
 
