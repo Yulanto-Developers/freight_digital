@@ -5,6 +5,8 @@ import TicketSection from "@/components/Home/TicketSection";
 import Banner from "@/components/Layout/Banner";
 import AboutSec from "@/components/about";
 import GrowthSection from "@/components/about/Growth";
+import WhyChooseUs from "@/components/about/WhyChosse";
+import FreightDigitalInfo from "@/components/about/WhyChosse";
 export const metadata: Metadata = {
     title: "About",
 };
@@ -18,6 +20,7 @@ const page = () => {
         <>
             <Banner page='About Us' url='/images/banner/b-450.jpg' />
             <AboutSec />
+            <FreightDigitalInfo />
             <GrowthSection />
             <TicketSection />
         </>

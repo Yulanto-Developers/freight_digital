@@ -47,21 +47,23 @@ function AboutSec() {
 
                         <div className="space-y-6">
                             <p className="text-xl text-[#58595b] leading-relaxed font-light border-l border-[#f1671a] pl-6">
-                                Freight Digital is a specialized digital marketing agency dedicated <span className="text-[#f1671a] font-medium">exclusively</span> to the freight forwarding and logistics industry.
+                                Freight Digital is a specialized digital marketing partner dedicated <span className="text-[#f1671a] font-medium">exclusively</span> to the freight forwarding and logistics industry.
                             </p>
 
-                            <div className="text-[#58595b] leading-relaxed space-y-4 text-lg">
+                            <div className="text-[#58595b] text-justify leading-relaxed space-y-4 text-lg">
                                 <p>
-                                    We help logistics companies strengthen their digital presence, attract new clients, and grow their business through targeted online marketing strategies.
+                                    We help freight forwarders, logistics providers, shipping lines, airlines, NVOCCs, customs brokers, and supply chain companies strengthen their digital presence, attract qualified leads, and grow their business through targeted online marketing strategies.
                                 </p>
                                 <p>
-                                    Unlike general marketing agencies, we understand the nuances of <span className="text-[#f1671a] uppercase tracking-wide text-sm font-bold">Carriers, Airlines, and NVOCCs.</span>
+
+                                    Unlike general marketing agencies, we understand the unique challenges and opportunities within the global logistics and supply chain sector. Our industry-focused approach enables us to deliver marketing solutions that drive measurable
+                                    <span className="text-[#f1671a] uppercase tracking-wide text-sm font-bold"> business growth and long-term brand visibility.</span>
                                 </p>
                             </div>
                         </div>
 
 
-                        <div className="grid grid-cols-2 gap-6 pt-4">
+                        {/* <div className="grid grid-cols-2 gap-6">
                             {
                                 listobj.map((item: { list: string }, index: number) => (
                                     <div key={index} className="flex items-center gap-3">
@@ -71,19 +73,8 @@ function AboutSec() {
                                 ))
                             }
 
-                            {/* <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 rounded-full bg-[#2C5378]" />
-                                <span className="text-sm text-slate-300 font-semibold uppercase tracking-wider">Results Driven</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 rounded-full bg-[#2C5378]" />
-                                <span className="text-sm text-slate-300 font-semibold uppercase tracking-wider">Specialized</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 rounded-full bg-[#2C5378]" />
-                                <span className="text-sm text-slate-300 font-semibold uppercase tracking-wider">Results Driven</span>
-                            </div> */}
-                        </div>
+                            
+                        </div> */}
                     </motion.div>
 
 
