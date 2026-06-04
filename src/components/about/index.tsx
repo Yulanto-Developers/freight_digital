@@ -6,20 +6,20 @@ import MissionVision from './Mission';
 
 function AboutSec() {
 
-    const listobj = [
-        {
-            'list': 'Results Driven'
-        },
-        {
-            'list': 'Specialized'
-        },
-        {
-            'list': 'Innovative'
-        },
-        {
-            'list': 'Client Focused'
-        }
-    ]
+    // const listobj = [
+    //     {
+    //         'list': 'Results Driven'
+    //     },
+    //     {
+    //         'list': 'Specialized'
+    //     },
+    //     {
+    //         'list': 'Innovative'
+    //     },
+    //     {
+    //         'list': 'Client Focused'
+    //     }
+    // ]
 
     return (
         <section className="py-24 bg-[#fff] overflow-hidden relative">
@@ -91,7 +91,7 @@ function AboutSec() {
                             className="relative z-10 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-slate-700"
                         >
                             <Image
-                                src="/images/about/about-1.jpg"
+                                src="/images/about/about-1.2.jpg"
                                 alt="Logistics Professionals"
                                 width={500}
                                 height={600}
@@ -99,7 +99,7 @@ function AboutSec() {
                             />
 
 
-                            <div className="absolute bottom-0 left-0 right-0 p-6 bg-slate-900/60 backdrop-blur-md border-t border-white/10">
+                            <div className="absolute bottom-0 left-0 right-0 p-4 bg-slate-900/60 backdrop-blur-md border-t border-white/10">
                                 <p className="text-white font-bold text-center uppercase tracking-widest text-xs">
                                     Global Supply Chain Experts
                                 </p>

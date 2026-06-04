@@ -9,6 +9,7 @@ import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
 const dmsans = DM_Sans({ subsets: ["latin"] });
 import NextTopLoader from 'nextjs-toploader';
+import LayoutWarper from "./layoutWarper";
 
 export default function RootLayout({
   children,
@@ -19,17 +20,19 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={dmsans.className}>
         <AuthDialogProvider>
-          <SessionProviderComp> 
+          <SessionProviderComp>
             <ThemeProvider
               attribute="class"
               enableSystem={true}
               defaultTheme="dark"
             >
               <Aoscompo>
-                <Header />
+
                 <NextTopLoader />
-                {children}
-                <Footer />
+                <LayoutWarper>
+                  {children}
+                </LayoutWarper>
+
               </Aoscompo>
               <ScrollToTop />
             </ThemeProvider>
