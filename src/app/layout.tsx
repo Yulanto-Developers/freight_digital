@@ -10,6 +10,7 @@ import { AuthDialogProvider } from "./context/AuthDialogContext";
 const dmsans = DM_Sans({ subsets: ["latin"] });
 import NextTopLoader from 'nextjs-toploader';
 import LayoutWarper from "./layoutWarper";
+import { Toaster } from "react-hot-toast";
 
 export default function RootLayout({
   children,
@@ -23,13 +24,14 @@ export default function RootLayout({
           <SessionProviderComp>
             <ThemeProvider
               attribute="class"
-              enableSystem={true}
+              enableSystem={false}
               defaultTheme="dark"
             >
               <Aoscompo>
 
                 <NextTopLoader />
                 <LayoutWarper>
+                  <Toaster />
                   {children}
                 </LayoutWarper>
 

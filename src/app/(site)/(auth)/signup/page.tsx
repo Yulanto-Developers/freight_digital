@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 const SignupPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Sign Up Page" />
-
       <SignUp />
     </>
   );

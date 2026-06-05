@@ -10,7 +10,7 @@ function LayoutWarper({ children }: { children: React.ReactNode }) {
     const hideLayout =
         path === '/signin/' ||
         path === "/signup/";
-    console.log(path);
+    // console.log(path);
 
     return (
         <>

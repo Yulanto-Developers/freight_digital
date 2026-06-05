@@ -5,7 +5,20 @@ import { Eye, EyeOff } from "lucide-react";
 
 export default function SignInLayout() {
     const [datas, setDatas] = useState({ email: '', password: '' })
-    const [types, setTypes] = useState(false);
+    const [types, setTypes] = useState(true);
+
+    function handlechnages(e: React.ChangeEvent<HTMLInputElement>) {
+        const { name, value } = e.target;
+        setDatas((prev) => ({
+            ...prev, [name]: value
+        }))
+    }
+
+    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        console.log(datas);
+
+    }
 
     return (
         <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
@@ -24,27 +37,27 @@ export default function SignInLayout() {
                     </p>
                 </div>
 
-                {/* Form Container */}
-                <form className="mt-8 space-y-6">
+
+                <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                     <div className="space-y-4 rounded-md shadow-sm">
 
-                        {/* Email Input */}
+
                         <div>
                             <label htmlFor="email-address" className="block text-sm font-medium text-gray-700 mb-1">
                                 Email address
                             </label>
                             <input
-                                id="email-address"
                                 name="email"
                                 type="email"
-                                autoComplete="email"
+                                value={datas.email}
+                                onChange={handlechnages}
                                 required
-                                className="relative block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                className="block w-full rounded-md border border-gray-300 px-3 py-2 pr-10 text-[#f1671a] bg-white  placeholder-gray-500 focus:border[#f1671a] focus:outline-none  sm:text-sm"
                                 placeholder="you@example.com"
                             />
                         </div>
 
-                        {/* Password Input */}
+
                         <div>
                             <label
                                 htmlFor="password"
@@ -55,12 +68,13 @@ export default function SignInLayout() {
 
                             <div className="relative">
                                 <input
-                                    id="password"
+
                                     name="password"
-                                    type={types?'password':'text'}
-                                    autoComplete="current-password"
+                                    type={types ? 'password' : 'text'}
+                                    value={datas.password}
+                                    onChange={handlechnages}
                                     required
-                                    className="block w-full rounded-md border border-gray-300 px-3 py-2 pr-10 text-[#f1671a] bg-white  placeholder-gray-500 focus:border-indigo-500 focus:outline-none  sm:text-sm"
+                                    className="block w-full rounded-md border border-gray-300 px-3 py-2 pr-10 text-[#f1671a] bg-white  placeholder-gray-500 focus:border[#f1671a] focus:outline-none  sm:text-sm"
                                     placeholder="••••••••"
                                 />
 
@@ -75,28 +89,25 @@ export default function SignInLayout() {
                         </div>
                     </div>
 
-                    {/* Remember Me & Forgot Password Utilities */}
+
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                            <input
-                                id="remember-me"
-                                name="remember-me"
-                                type="checkbox"
-                                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                            <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                                Remember me
-                            </label>
+
+                            <p className='text-[#58595b]'>
+                                Create Your Account?{" "}
+                                <a href="/signup" className="font-medium text-[#f1671a] hover:text-[#58595b]">
+                                    sign Up
+                                </a>
+                            </p>
                         </div>
 
                         <div className="text-sm">
-                            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                            <a href="#" className="font-medium text-[#f1671a] hover:text-[#58595b]">
                                 Forgot your password?
                             </a>
                         </div>
                     </div>
 
-                    {/* Submit Button */}
                     <div>
                         <button
                             type="submit"
