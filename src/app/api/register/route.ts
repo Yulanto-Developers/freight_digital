@@ -17,13 +17,20 @@ import bcrypt from "bcryptjs";
 
 export async function POST(req: NextRequest) {
     const data = await req.formData();
-    const fname = data.get('fullname')
-    const email = data.get('email')
-    const phone = data.get('phone')
-    const dob = data.get('dob')
-    const address = data.get('address')
-    const password = data.get('password')
+    const fname = data.get('fullname')?.toString();
+    const email = data.get('email')?.toString();
+    const phone = data.get('phone')?.toString();
+    const dob = data.get('dob')?.toString();
+    const address = data.get('address')?.toString();
+    const password = data.get('password')?.toString();
     const profile = data.get('profile') as File | null
+
+    if (!fname || !email || !phone || !dob || !address || !password) {
+        return NextResponse.json({
+            status: false,
+            message: "All fields are required",
+        });
+    }
 
     const [checkEmail]: any = await db.query('select * from login_details where email=?', [email]);
 

@@ -8,7 +8,7 @@ const SignUp = () => {
     const [profile, setProfile] = useState<File | null>(null);
     const [profilePreview, setProfilePreview] = useState<string>();
 
-    function handleImage(e: React.ChangeEvent<HTMLInputElement>) {
+    function handleImage(e: React.ChangeEvent<HTMLInputElement >) {
         const file = e.target.files?.[0];
         const sizeByte = 3145728
         if (file) {
@@ -23,7 +23,7 @@ const SignUp = () => {
         }
     }
 
-    function handlechanges(e: React.ChangeEvent<HTMLInputElement>) {
+    function handlechanges(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
         const { name, value } = e.target;
 
         if (name === "phone" && !/^\d*$/.test(value)) {
