@@ -160,7 +160,7 @@ export async function POST(req: NextRequest) {
                 email,
                 hashPassword,
                 userId,
-                "Admin",
+                "User",
             ]
         );
 
