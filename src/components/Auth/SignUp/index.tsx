@@ -48,10 +48,10 @@ const SignUp = () => {
             sData.append('phone', signup.phone);
             sData.append('address', signup.address);
             sData.append('password', signup.pass);
-            if (profile) {
-                sData.append('profile', profile);
-            }
-            const signupApi = await fetch('/api/register', {
+            // if (profile) {
+            //     sData.append('profile', profile);
+            // }
+            const signupApi = await fetch('/api/register/', {
                 method: 'POST',
                 // headers: {
                 //     'Content-Type': 'application/json'
