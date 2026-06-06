@@ -104,6 +104,8 @@ import { ResultSetHeader } from "mysql2";
 
 export async function POST(req: NextRequest) {
     try {
+        console.log("MYSQL_HOST =", process.env.MYSQL_HOST);
+        console.log("MYSQL_PORT =", process.env.MYSQL_PORT);
         const data = await req.formData();
 
         const fname = data.get("fullname")?.toString();
@@ -121,7 +123,7 @@ export async function POST(req: NextRequest) {
         }
 
         const [checkEmail]: any = await db.query(
-            "SELECT * FROM login_details WHERE email = ?",
+            "SELECT * FROM login_details WHERE username = ?",
             [email]
         );
 
@@ -152,7 +154,7 @@ export async function POST(req: NextRequest) {
 
         await db.query(
             `INSERT INTO login_details
-            (email,password,user_id,login_type)
+            (username,password,user_id,role)
             VALUES (?,?,?,?)`,
             [
                 email,

@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     }
     else {
-        const [checkLogin]: any = await db.query('select * from login_details where email=?', [email]);
+        const [checkLogin]: any = await db.query('select * from login_details where username=?', [email]);
         if (checkLogin && checkLogin.length > 0) {
             const verify_pass: boolean = await bcrypt.compare(password, checkLogin[0].password);
             if (!verify_pass) {
@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
                     {
                         id: checkLogin[0].id,
                         email: checkLogin[0].email,
-                        role: checkLogin[0].login_type
+                        role: checkLogin[0].role
                     },
                     process.env.MY_SECREAT_KEY as string,
                 )
