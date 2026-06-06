@@ -2,6 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Eye, EyeOff } from "lucide-react";
+import toast from 'react-hot-toast';
 
 export default function SignInLayout() {
     const [datas, setDatas] = useState({ email: '', password: '' })
@@ -14,9 +15,29 @@ export default function SignInLayout() {
         }))
     }
 
-    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        console.log(datas);
+        //     console.log(datas);
+
+        const LoginApi = await fetch('/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'Application/json'
+            },
+            body: JSON.stringify({ email: datas.email, password: datas.password })
+        });
+
+        const resposneApi = await LoginApi.json();
+        // console.log(resposneApi);
+        if (resposneApi.status) {
+            toast.success(resposneApi.message, { position: 'top-center' })
+            
+        }
+        else {
+            toast.error(resposneApi.message, { position: 'top-center' })
+        }
+
+
 
     }
 
@@ -41,7 +62,7 @@ export default function SignInLayout() {
                 <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                     <div className="space-y-4 rounded-md shadow-sm">
 
-
+                        {/* Email Field */}
                         <div>
                             <label htmlFor="email-address" className="block text-sm font-medium text-gray-700 mb-1">
                                 Email address
@@ -52,29 +73,25 @@ export default function SignInLayout() {
                                 value={datas.email}
                                 onChange={handlechnages}
                                 required
-                                className="block w-full rounded-md border border-gray-300 px-3 py-2 pr-10 text-[#f1671a] bg-white  placeholder-gray-500 focus:border[#f1671a] focus:outline-none  sm:text-sm"
+                                className="block w-full rounded-md border border-gray-300 px-3 py-2 pr-10 text-[#f1671a] bg-white placeholder-gray-500 focus:border-[#f1671a] focus:outline-none sm:text-sm"
                                 placeholder="you@example.com"
                             />
                         </div>
 
 
                         <div>
-                            <label
-                                htmlFor="password"
-                                className="block text-sm font-medium text-gray-700 mb-1"
-                            >
+                            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
                                 Password
                             </label>
 
                             <div className="relative">
                                 <input
-
                                     name="password"
                                     type={types ? 'password' : 'text'}
                                     value={datas.password}
                                     onChange={handlechnages}
                                     required
-                                    className="block w-full rounded-md border border-gray-300 px-3 py-2 pr-10 text-[#f1671a] bg-white  placeholder-gray-500 focus:border[#f1671a] focus:outline-none  sm:text-sm"
+                                    className="block w-full rounded-md border border-gray-300 px-3 py-2 pr-10 text-[#f1671a] bg-white placeholder-gray-500 focus:border-[#f1671a] focus:outline-none sm:text-sm"
                                     placeholder="••••••••"
                                 />
 
@@ -90,23 +107,19 @@ export default function SignInLayout() {
                     </div>
 
 
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-
-                            <p className='text-[#58595b]'>
-                                Create Your Account?{" "}
-                                <a href="/signup" className="font-medium text-[#f1671a] hover:text-[#58595b]">
-                                    sign Up
-                                </a>
-                            </p>
-                        </div>
-
-                        <div className="text-sm">
-                            <a href="#" className="font-medium text-[#f1671a] hover:text-[#58595b]">
-                                Forgot your password?
+                    <div className="flex items-center justify-between text-sm">
+                        <p className='text-[#58595b]'>
+                            Create Your Account?{" "}
+                            <a href="/signup" className="font-medium text-[#f1671a] hover:text-[#58595b]">
+                                Sign up
                             </a>
-                        </div>
+                        </p>
+
+                        <a href="#" className="font-medium text-[#f1671a] hover:text-[#58595b]">
+                            Forgot your password?
+                        </a>
                     </div>
+
 
                     <div>
                         <button
