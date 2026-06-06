@@ -1,8 +1,8 @@
 import { db } from "@/lib/config";
 import { NextRequest, NextResponse } from "next/server";
 import { ResultSetHeader } from "mysql2";
-import fs from 'fs';
-import path from 'path'
+// import fs from 'fs';
+// import path from 'path'
 import bcrypt from "bcryptjs";
 
 
@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
             // Imagename = Date.now() + profile.name;
             // const saveImage = path.join(process.cwd(), 'public/uploads', Imagename)
             // fs.writeFileSync(saveImage, ImageBuffer);
-            return null;
+            Imagename = '';
 
         }
         else {
