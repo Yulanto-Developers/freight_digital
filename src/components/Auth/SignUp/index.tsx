@@ -38,45 +38,46 @@ const SignUp = () => {
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        // console.log(signup);
 
-        if (signup.pass === signup.conf_pass) {
+        if (signup.pass !== signup.conf_pass) {
+            toast.error("Password Mismatch");
+            return;
+        }
+
+        try {
             const sData = new FormData();
-            sData.append('fullname', signup.fname);
-            sData.append('email', signup.email);
-            sData.append('dob', signup.dob);
-            sData.append('phone', signup.phone);
-            sData.append('address', signup.address);
-            sData.append('password', signup.pass);
-            // if (profile) {
-            //     sData.append('profile', profile);
-            // }
-            const signupApi = await fetch('/api/register/', {
-                method: 'POST',
-                // headers: {
-                //     'Content-Type': 'application/json'
-                // },
-                body: sData
-            })
 
-            const res_signup = await signupApi.json();
-            console.log(res_signup);
+            sData.append("fullname", signup.fname);
+            sData.append("email", signup.email);
+            sData.append("phone", signup.phone);
+            sData.append("dob", signup.dob);
+            sData.append("address", signup.address);
+            sData.append("password", signup.pass);
 
-            if (res_signup.status) {
-                toast.success(res_signup.message, { position: 'top-center' });
+            const response = await fetch("/api/register", {
+                method: "POST",
+                body: sData,
+            });
+
+            console.log("Status:", response.status);
+
+            const result = await response.json();
+
+            console.log(result);
+
+            if (result.status) {
+                toast.success(result.message, {
+                    position: "top-center",
+                });
+            } else {
+                toast.error(result.message, {
+                    position: "top-center",
+                });
             }
-            else {
-                toast.error(res_signup.message, { position: 'top-center' });
-            }
-
-
+        } catch (error) {
+            console.log(error);
+            toast.error("Something went wrong");
         }
-        else {
-            console.log('p mistach');
-
-            toast.error('Password Mistach', { position: 'top-center' });
-        }
-
     }
 
 
@@ -219,7 +220,7 @@ const SignUp = () => {
                                         accept="image/*"
                                         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
 
-                                        // onChange={handleImage}
+                                    // onChange={handleImage}
                                     />
                                 </div>
                             </div>
