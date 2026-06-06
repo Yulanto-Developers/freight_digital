@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     const dob = data.get('dob')?.toString();
     const address = data.get('address')?.toString();
     const password = data.get('password')?.toString();
-    const profile = data.get('profile') as File | null
+    // const profile = data.get('profile') as File | null
 
     if (!fname || !email || !phone || !dob || !address || !password) {
         return NextResponse.json({
@@ -43,18 +43,18 @@ export async function POST(req: NextRequest) {
     else {
         const hashPassword = await bcrypt.hash(password, 10);
         let Imagename: string = ''
-        if (profile instanceof File && profile.size > 0) {
+        // if (profile instanceof File && profile.size > 0) {
             // const Imagebinary = await profile.arrayBuffer();
             // const ImageBuffer = Buffer.from(Imagebinary);
             // Imagename = Date.now() + profile.name;
             // const saveImage = path.join(process.cwd(), 'public/uploads', Imagename)
             // fs.writeFileSync(saveImage, ImageBuffer);
-            Imagename = '';
+        //     Imagename = '';
 
-        }
-        else {
-            Imagename = '';
-        }
+        // }
+        // else {
+        //     Imagename = '';
+        // }
 
         const [insertSignin] = await db.query<ResultSetHeader>('INSERT INTO register_details(fullname,email,phone,dob,profile,address) values(?,?,?,?,?,?)', [
             fname,

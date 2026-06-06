@@ -8,20 +8,20 @@ const SignUp = () => {
     const [profile, setProfile] = useState<File | null>(null);
     const [profilePreview, setProfilePreview] = useState<string>();
 
-    function handleImage(e: React.ChangeEvent<HTMLInputElement>) {
-        const file = e.target.files?.[0];
-        const sizeByte = 3145728
-        if (file) {
-            if (file.size <= sizeByte) {
-                setProfile(file);
-                setProfilePreview(URL.createObjectURL(file));
-            }
-            else {
-                console.log('file size is greater than 3 mb');
-                toast.error('file size is greater than 3 mb')
-            }
-        }
-    }
+    // function handleImage(e: React.ChangeEvent<HTMLInputElement>) {
+    //     const file = e.target.files?.[0];
+    //     const sizeByte = 3145728
+    //     if (file) {
+    //         if (file.size <= sizeByte) {
+    //             setProfile(file);
+    //             setProfilePreview(URL.createObjectURL(file));
+    //         }
+    //         else {
+    //             console.log('file size is greater than 3 mb');
+    //             toast.error('file size is greater than 3 mb')
+    //         }
+    //     }
+    // }
 
     function handlechanges(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
         const { name, value } = e.target;
@@ -219,7 +219,7 @@ const SignUp = () => {
                                         accept="image/*"
                                         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
 
-                                        onChange={handleImage}
+                                        // onChange={handleImage}
                                     />
                                 </div>
                             </div>
