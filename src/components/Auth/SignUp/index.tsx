@@ -112,7 +112,7 @@ const SignUp = () => {
                             <hr className="w-full border-gray-100 " />
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch">
+                        <div className="">
 
                             <div className="md:col-span-8 flex flex-col justify-between space-y-3">
 
@@ -181,7 +181,7 @@ const SignUp = () => {
                             </div>
 
 
-                            <div className="md:col-span-4 flex flex-col">
+                            {/* <div className="md:col-span-4 flex flex-col">
                                 <label className="block text-xs font-bold text-gray-400 dark:text-gray-500 mb-1.5">
                                     Profile Image
                                 </label>
@@ -223,7 +223,7 @@ const SignUp = () => {
                                     // onChange={handleImage}
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
