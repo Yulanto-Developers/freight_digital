@@ -44,11 +44,13 @@ export async function POST(req: NextRequest) {
         const hashPassword = await bcrypt.hash(password, 10);
         let Imagename: string = ''
         if (profile instanceof File && profile.size > 0) {
-            const Imagebinary = await profile.arrayBuffer();
-            const ImageBuffer = Buffer.from(Imagebinary);
-            Imagename = Date.now() + profile.name;
-            const saveImage = path.join(process.cwd(), 'public/uploads', Imagename)
-            fs.writeFileSync(saveImage, ImageBuffer);
+            // const Imagebinary = await profile.arrayBuffer();
+            // const ImageBuffer = Buffer.from(Imagebinary);
+            // Imagename = Date.now() + profile.name;
+            // const saveImage = path.join(process.cwd(), 'public/uploads', Imagename)
+            // fs.writeFileSync(saveImage, ImageBuffer);
+            return null;
+
         }
         else {
             Imagename = '';
