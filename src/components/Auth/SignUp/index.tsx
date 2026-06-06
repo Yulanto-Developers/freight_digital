@@ -126,7 +126,7 @@ const SignUp = () => {
                                                 placeholder="John Doe"
                                                 onChange={handlechanges}
                                                 required
-                                                className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white px-3 py-2.5 text-sm text-gray-900 dark:text-white outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
+                                                className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white px-3 py-2.5 text-sm text-[#f1671a] outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
                                             />
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@ const SignUp = () => {
                                                 placeholder="you@example.com"
                                                 onChange={handlechanges}
                                                 required
-                                                className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2.5 text-sm text-gray-900 dark:text-white outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
+                                                className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2.5 text-sm  outline text-[#f1671a]-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
                                             />
                                         </div>
                                     </div>
@@ -157,7 +157,7 @@ const SignUp = () => {
                                                 name="dob"
                                                 required
                                                 onChange={handlechanges}
-                                                className="w-full rounded-lg border border-gray-300  bg-white px-3 py-2.5 text-sm  outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
+                                                className="w-full rounded-lg border border-gray-300  bg-white px-3 py-2.5 text-sm text-[#f1671a]  outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
                                             />
                                         </div>
                                     </div>
@@ -172,7 +172,7 @@ const SignUp = () => {
                                                 onChange={handlechanges}
                                                 maxLength={10}
                                                 placeholder="1234567890"
-                                                className="w-full rounded-lg border border-gray-300  bg-white px-3 py-2.5 text-sm  outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
+                                                className="w-full rounded-lg border border-gray-300  bg-white px-3 py-2.5 text-sm text-[#f1671a] outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
                                             />
                                         </div>
                                     </div>
@@ -238,7 +238,7 @@ const SignUp = () => {
                             name="address"
                             placeholder="Full Address (Street, Apt, Suite, City, State)"
                             onChange={handlechanges}
-                            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-4 py-2.5 text-sm text-gray-900 dark:text-white outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
+                            className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-4 py-2.5 text-sm text-[#f1671a] outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
                         />
                     </div>
 
@@ -261,7 +261,7 @@ const SignUp = () => {
                                         placeholder="••••••••"
                                         onChange={handlechanges}
                                         required
-                                        className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white px-3 py-2.5 text-sm text-gray-900 dark:text-white outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
+                                        className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white px-3 py-2.5 text-sm text-[#f1671a] outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
                                     />
                                 </div>
                             </div>
@@ -275,7 +275,7 @@ const SignUp = () => {
                                         placeholder="••••••••"
                                         onChange={handlechanges}
                                         required
-                                        className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2.5 text-sm text-gray-900 dark:text-white outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
+                                        className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2.5 text-sm text-[#f1671a] outline-none transition focus:border-[#f1671a] focus:ring-1 focus:ring-[#f1671a]/30"
                                     />
                                 </div>
                             </div>
