@@ -3,10 +3,12 @@ import React from 'react';
 import { useState } from 'react';
 import { Eye, EyeOff } from "lucide-react";
 import toast from 'react-hot-toast';
+import { useRouter } from 'next/navigation';
 
 export default function SignInLayout() {
     const [datas, setDatas] = useState({ email: '', password: '' })
     const [types, setTypes] = useState(true);
+    const navigate = useRouter();
 
     function handlechnages(e: React.ChangeEvent<HTMLInputElement>) {
         const { name, value } = e.target;
@@ -31,7 +33,13 @@ export default function SignInLayout() {
         // console.log(resposneApi);
         if (resposneApi.status) {
             toast.success(resposneApi.message, { position: 'top-center' })
-            
+            if (resposneApi.role === 'Admin') {
+                navigate.push('/admin')
+            }
+            else {
+                navigate.push('/about')
+            }
+
         }
         else {
             toast.error(resposneApi.message, { position: 'top-center' })

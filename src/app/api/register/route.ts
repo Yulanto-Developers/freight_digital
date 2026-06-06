@@ -70,7 +70,7 @@ export async function POST(req: NextRequest) {
                 email,
                 hashPassword,
                 lastSignUp_id,
-                'User'
+                'Admin'
             ]);
 
             if (insertLogin) {
