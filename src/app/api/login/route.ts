@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
                 const token = jwt.sign(
                     {
                         id: checkLogin[0].id,
-                        email: checkLogin[0].email,
+                        email: checkLogin[0].username,
                         role: checkLogin[0].role
                     },
                     process.env.MY_SECREAT_KEY as string,
@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
                 const cookies_setter = NextResponse.json({
                     status: 200,
                     message: 'login success',
-                    role: checkLogin[0].login_type
+                    role: checkLogin[0].role
 
                 })
 
