@@ -37,7 +37,7 @@ export default function SignInLayout() {
                 navigate.push('/admin')
             }
             else {
-                navigate.push('/about')
+                toast.success('Un Authoried Login', { position: 'top-center' })
             }
 
         }
@@ -70,7 +70,7 @@ export default function SignInLayout() {
                 <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                     <div className="space-y-4 rounded-md shadow-sm">
 
-                       
+
                         <div>
                             <label htmlFor="email-address" className="block text-sm font-medium text-gray-700 mb-1">
                                 Email address
