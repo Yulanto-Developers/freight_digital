@@ -86,11 +86,11 @@ const Header: React.FC = () => {
             <div className="flex items-center space-x-4">
 
               <Link
-                href="tel:+911234567890"
+                href="tel:+971561473934"
                 className={`hidden lg:block btn_outline  hover-outline-slide-down rounded-lg 
                   ${sticky ? "btn-3" : "btn-3"}`}
               >
-                <span className="!py-2 !px-4">+91 12345 67890</span>
+                <span className="!py-2 !px-4">+971 56 1473934</span>
               </Link>
 
 

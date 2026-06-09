@@ -46,7 +46,7 @@ function AboutSec() {
                         </div>
 
                         <div className="space-y-6">
-                            <p className="text-xl text-[#58595b] leading-relaxed font-light border-l border-[#f1671a] pl-6">
+                            <p className="text-lg text-justify text-[#58595b] leading-relaxed  border-l border-[#f1671a] pl-6">
                                 Freight Digital is a specialized digital marketing partner dedicated <span className="text-[#f1671a] font-medium">exclusively</span> to the freight forwarding and logistics industry.
                             </p>
 

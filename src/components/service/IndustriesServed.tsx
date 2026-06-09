@@ -86,7 +86,7 @@ export default function IndustriesServed() {
                         Target Audience
                     </span>
                     <h2 className="text-4xl md:text-6xl font-bold text-[#58595b] leading-tight">
-                        Industries <span className="text-[#f1671a] italic">We Serve</span>
+                        Industries <span className="text-[#f1671a]">We Serve</span>
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl">
                         Freight Digital works with businesses across the entire logistics sector, delivering tailored growth solutions to specific niches.
