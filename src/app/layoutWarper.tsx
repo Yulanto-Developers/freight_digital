@@ -8,7 +8,7 @@ function LayoutWarper({ children }: { children: React.ReactNode }) {
     const path = usePathname();
 
     const hideLayout =
-        path.includes('/admin/')
+        path.includes('/admin/') || path.includes('/signin') || path.includes('/signu')
     // console.log(path);
 
     return (
