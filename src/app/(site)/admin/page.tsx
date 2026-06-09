@@ -3,7 +3,7 @@
 
 function Admin() {
     return (
-        <div>Welcome Admin</div>
+        <div className="text-black">Welcome Admin</div>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { signIn } from "@/lib/authMock";
+import { signIn } from "@/lib/trash/authMock";
 
 
 const SocialSignIn = () => {

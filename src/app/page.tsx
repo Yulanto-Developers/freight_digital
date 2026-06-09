@@ -7,7 +7,7 @@ import WorkSpeakers from '@/components/Home/WorkSpeakers';
 // import Highlight from '@/components/Home/YearHighlight/page';
 // import Upcoming from '@/components/Home/Upcoming';
 import Testimonials from '@/components/Home/Testimonials';
-import TicketSection from '@/components/Home/TicketSection';
+// import TicketSection from '@/components/Home/TicketSection';
 import ServicesPage from '@/components/Home/Service-page/page';
 export const metadata: Metadata = {
   title: "Freight Digital",
@@ -23,7 +23,7 @@ export default function Home() {
       {/* <Highlight /> */}
       {/* <Upcoming /> */}
       <Testimonials />
-      <TicketSection />
+       {/* <TicketSection /> */}
     </main>
   )
 }

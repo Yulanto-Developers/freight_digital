@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { SessionProvider } from "@/lib/authMock";
+import { SessionProvider } from "@/lib/trash/authMock";
 
 export default function SessionProviderComp({
   children,

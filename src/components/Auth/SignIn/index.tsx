@@ -70,7 +70,7 @@ export default function SignInLayout() {
                 <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
                     <div className="space-y-4 rounded-md shadow-sm">
 
-                        {/* Email Field */}
+                       
                         <div>
                             <label htmlFor="email-address" className="block text-sm font-medium text-gray-700 mb-1">
                                 Email address
@@ -116,12 +116,12 @@ export default function SignInLayout() {
 
 
                     <div className="flex items-center justify-between text-sm">
-                        <p className='text-[#58595b]'>
+                        {/* <p className='text-[#58595b]'>
                             Create Your Account?{" "}
                             <a href="/signup" className="font-medium text-[#f1671a] hover:text-[#58595b]">
                                 Sign up
                             </a>
-                        </p>
+                        </p> */}
 
                         <a href="#" className="font-medium text-[#f1671a] hover:text-[#58595b]">
                             Forgot your password?

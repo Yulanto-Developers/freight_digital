@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Metadata } from "next";
-import TicketSection from "@/components/Home/TicketSection";
+// import TicketSection from "@/components/Home/TicketSection";
 import Banner from "@/components/Layout/Banner";
 import AboutSec from "@/components/about";
 import GrowthSection from "@/components/about/Growth";
@@ -22,7 +22,7 @@ const page = () => {
             <AboutSec />
             <FreightDigitalInfo />
             <GrowthSection />
-            <TicketSection />
+            {/* <TicketSection /> */}
         </>
     );
 };
