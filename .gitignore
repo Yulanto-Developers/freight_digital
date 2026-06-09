@@ -2,8 +2,8 @@
 
 
 #alrey updated file in production
-/lib/config.ts
-/lib/trash
+src/lib/config.ts
+src/lib/trash
 
 # dependencies
 /node_modules
