@@ -109,14 +109,11 @@ const ContactInfo = () => {
                         className="absolute inset-0 pointer-events-none transition-opacity duration-300 group-hover/map:opacity-0 opacity-5"
                         style={{ backgroundColor: "#58595b" }}
                     />
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d395806.46116803563!2d79.87899178681546!3d13.047985946519182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1779347845855!5m2!1sen!2sin"
-                        width="100%"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.2595178811607!2d55.4585985!3d25.3199091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f26195b7e6b%3A0xc0f6d4eb509bdf75!2sSPC%20Free%20Zone%20-%20Business%20Setup%20In%20Sharjah%2C%20UAE!5e1!3m2!1sen!2sin!4v1781013353774!5m2!1sen!2sin"  width="100%"
                         height="480"
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        className="w-full filter grayscale-[10%] contrast-[102%] dark:invert-[90%] dark:hue-rotate-[180deg] transition-all duration-500 ease-in-out"
-                    />
+                        className="w-full filter grayscale-[10%] contrast-[102%] dark:invert-[90%] dark:hue-rotate-[180deg] transition-all duration-500 ease-in-out"></iframe>
                 </div>
             </div>
 

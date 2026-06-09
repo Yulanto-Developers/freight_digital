@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import logo from '../../../../../public/images/logo/Logo-1.png'
 import toast from 'react-hot-toast';
@@ -11,6 +11,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
+    const [hvalue, setHvalue] = useState<any>({})
 
     const navigate = useRouter();
     async function logout() {
@@ -34,25 +35,38 @@ export const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
 
     }
 
+    useEffect(() => {
+        console.log('useEffect running');
+        GetHeader()
+    }, [])
+
+    async function GetHeader() {
+        const HeaderApi = await fetch('/api/profile', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+        })
+        const HeaderResponse = await HeaderApi.json();
+        // console.log(HeaderResponse);
+        if (HeaderResponse.status) {
+            setHvalue(HeaderResponse.message);
+        }
+
+
+    }
+
     return (
         <header className="bg-white border-b border-gray-200 fixed top-0 z-30 w-full h-16 flex items-center justify-between px-6">
-            {/* Left: Logo */}
             <div className="flex items-center gap-3">
-                {/* <div className="bg-indigo-600 p-2 rounded-lg text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>*/}
                 <Image src={logo} alt='logo' width={100} height={90} />
-                {/* <span className="text-xl font-bold bg-[#f1671a] bg-clip-text text-transparent hidden sm:block">
-                    AdminConsole
-                </span> */}
             </div>
 
 
             <div className="flex items-center gap-4">
 
-                <button className="flex items-center gap-2 p-1.5 rounded-lg hover:bg-gray-100 transition-colors group text-left" onClick={()=>{navigate.push('/admin/profile')}}>
+                <button className="flex items-center gap-2 p-1.5 rounded-lg hover:bg-gray-100 transition-colors group text-left" onClick={() => { navigate.push('/admin/profile') }}>
                     <div className="relative h-9 w-9">
                         <Image
                             src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop"
@@ -62,8 +76,8 @@ export const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
                         />
                     </div>
                     <div className="hidden md:block">
-                        <p className="text-sm font-semibold text-gray-700 leading-none">Alex Morgan</p>
-                        <span className="text-xs text-gray-500">Super Admin</span>
+                        <p className="text-sm font-semibold text-gray-700 leading-none">{hvalue?.fullname}</p>
+                        <span className="text-xs text-gray-500">{hvalue?.role}</span>
                     </div>
                 </button>
 

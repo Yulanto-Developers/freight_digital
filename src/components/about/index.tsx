@@ -41,7 +41,7 @@ function AboutSec() {
                                 About Us – Freight Digital
                             </span>
                             <h2 className="text-4xl md:text-6xl font-bold text-[#58595b] leading-tight">
-                                Who We <span className="text-[#f1671a] italic">Are</span>
+                                Who We <span className="text-[#f1671a]">Are</span>
                             </h2>
                         </div>
 

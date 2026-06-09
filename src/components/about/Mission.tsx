@@ -17,14 +17,14 @@ export default function MissionVision() {
         {
             title: 'Our Mission',
             description1: 'At Freight Digital, our mission is to help freight forwarding and logistics companies grow their business through powerful and effective digital marketing strategies.',
-            description2: 'We aim to improve the online presence of logistics companies by providing specialized services such as SEO and professional networking strategies.',
-            description3: 'Our focus is to deliver marketing solutions that create real business opportunities for freight forwarders and logistics service providers.',
+            description2: 'We aim to improve the online presence of logistics companies by providing specialized services such as search engine optimization, and professional networking strategies. By combining industry understanding with modern digital tools, we help logistics businesses attract new clients, build credibility, and compete in the global market.',
+            description3: 'Our focus is to deliver marketing solutions that create real business opportunities for freight forwarders, customs brokers, transportation companies, and logistics service providers.',
         },
         {
             title: 'Our Vision',
             description1: 'Our vision is to become a trusted digital marketing partner for freight forwarding and logistics companies worldwide.',
-            description2: 'We strive to support logistics businesses in adapting to the digital era by helping them build strong online visibility and connect with global trade partners.',
-            description3: 'Freight Digital aims to be recognized as a specialized marketing agency that helps companies achieve long-term growth through digital innovation.',
+            description2: 'We strive to support logistics businesses in adapting to the digital era by helping them build strong online visibility, connect with global trade partners, and expand their reach across international markets.',
+            description3: 'Freight Digital aims to be recognized as a specialized marketing agency that understands the logistics industry and helps companies achieve long-term growth through digital innovation.',
         }
     ];
 
@@ -73,6 +73,8 @@ export default function MissionVision() {
                     <h2 className="text-5xl md:text-6xl font-black text-[#58595b] tracking-tighter uppercase">
                         Our <span className="text-[#f1671a]">Goals</span>
                     </h2>
+
+                    <p className='text-md tracking-normal text-[#58595b] text-center mt-2'>Our goal is to help logistics companies increase global visibility, build strong agent networks, and generate new business opportunities through targeted digital marketing.</p>
                 </div>
 
 

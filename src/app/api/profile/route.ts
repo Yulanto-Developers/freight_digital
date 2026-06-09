@@ -43,7 +43,8 @@ export async function GET(req: NextRequest) {
                 fullname: profileData[0]?.fullname || '',
                 phone: profileData[0]?.phone || '',
                 dob: profileData[0]?.dob || '',
-                address: profileData[0]?.address || ''
+                address: profileData[0]?.address || '',
+                role: profileData[0]?.role || ''
             }
         });
 

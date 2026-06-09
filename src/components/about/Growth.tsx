@@ -24,7 +24,7 @@ export default function GrowthSection() {
                             <Zap size={16} fill="#f1671a" /> Scale Your Operations
                         </div>
 
-                        <h2 className="text-5xl md:text-7xl font-black text-white leading-[1.1] mb-8 uppercase italic ">
+                        <h2 className="text-5xl md:text-7xl font-black text-white leading-[1.1] mb-8 uppercase">
                             Let’s <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#fff]/50 to-[#f1671a]">
                                 Grow Your
@@ -87,7 +87,7 @@ export default function GrowthSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     className="mt-20 p-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left"
                 >
-                    <p className="text-white max-w-2xl text-md italic">
+                    <p className="text-white max-w-2xl text-md">
                         "Our team is committed to helping freight and logistics companies build a powerful digital presence and grow their business in an increasingly connected global marketplace."
                     </p>
                     <div className="flex gap-8">
