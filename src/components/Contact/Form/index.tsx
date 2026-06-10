@@ -5,7 +5,7 @@ import Image from "next/image";
 const ContactForm = () => {
     return (
         <>
-            <section className="bg-white lg:pb-24 pb-16 pt-0 font-sans">
+            <section id="consultation-section" className="bg-white lg:pb-24 pb-16 pt-0 font-sans">
                 <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
                     <div className="grid md:grid-cols-12 grid-cols-1 gap-12 items-center">
 
