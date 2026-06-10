@@ -69,18 +69,6 @@ export default function IndustriesServed() {
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* Top Header Section */}
-                {/* <div className="max-w-3xl mb-16">
-                    <h2 className="text-base font-semibold text-blue-600 uppercase tracking-wider">
-                      
-                    </h2>
-                    <p className="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl tracking-tight">
-                        
-                    </p>
-                    <p className="mt-4 text-lg text-slate-600 max-w-2xl">
-                        Freight Digital works with businesses across the entire logistics sector, delivering tailored growth solutions to specific niches.
-                    </p>
-                </div> */}
                 <div className='py-5'>
                     <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-[0.2em] text-[#fff] uppercase bg-[#58595b] border-l-4 border-[#f1671a]">
                         Target Audience
@@ -89,7 +77,7 @@ export default function IndustriesServed() {
                         Industries <span className="text-[#f1671a]">We Serve</span>
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl">
-                        Freight Digital works with businesses across the entire logistics sector, delivering tailored growth solutions to specific niches.
+                      From freight forwarding to warehousing and supply chain management, Freipght Digital provides industry-specific marketing solutions that help logistics companies grow in a competitive global market.
                     </p>
                 </div>
 

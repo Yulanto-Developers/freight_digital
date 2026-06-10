@@ -15,31 +15,31 @@ export default function ServicesSection() {
         {
             id: 1,
             title: "Global Logistics Advertising",
-            description: "Promote your company to thousands of freight forwarders and logistics companies worldwide.",
+            description: "Reach thousands of freight forwarders, logistics companies, shipping lines, and international trade professionals through targeted industry-focused advertising.",
             icon: <Globe className="w-6 h-6 " />,
         },
         {
             id: 2,
             title: "Digital Marketing Campaigns",
-            description: "Targeted marketing strategies designed specifically for the logistics and shipping industry.",
+            description: "Strategic digital marketing solutions crafted for the logistics industry, helping companies build brand awareness, attract potential customers, and achieve sustainable growth.",
             icon: <Megaphone className="w-6 h-6 " />,
         },
         {
             id: 3,
             title: "Online Business Promotion",
-            description: "Increase your company's brand visibility across global freight networks.",
+            description: "Enhance your online presence and connect with international freight forwarders, logistics providers, and potential business partners worldwide.",
             icon: <TrendingUp className="w-6 h-6 " />,
         },
         {
             id: 4,
             title: "Logistics Industry Listings",
-            description: "Get your company listed and promoted to international agents and partners.",
+            description: "Expand your global network through a professional company listing designed to enhance visibility, credibility, and business opportunities within the logistics industry.",
             icon: <ListPlus className="w-6 h-6" />,
         },
         {
             id: 5,
             title: "Newsletter Advertising",
-            description: "Promote your services through logistics-focused digital newsletters reaching industry professionals.",
+            description: "Increase brand awareness and generate business opportunities through strategic placement in industry-focused newsletters distributed to logistics and freight professionals.",
             icon: <Mail className="w-6 h-6 " />,
         },
     ];
@@ -49,12 +49,12 @@ export default function ServicesSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
-                 <div className='py-5'>
+                <div className='py-5'>
                     <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-[0.2em] text-[#fff] uppercase bg-[#58595b] border-l-4 border-[#f1671a]">
                         What We Offer
                     </span>
                     <h2 className="text-4xl md:text-6xl font-bold text-[#58595b] leading-tight">
-                         Our  <span className="text-[#f1671a]">Services</span>
+                        Our  <span className="text-[#f1671a]">Services</span>
                     </h2>
                     {/* <p className="mt-4 text-lg text-slate-600 max-w-2xl">
                         Freight Digital works with businesses across the entire logistics sector, delivering tailored growth solutions to specific niches.

@@ -301,14 +301,8 @@ const Footer: FC = () => {
                                     <span className="text-white/90 text-sm block font-medium uppercase tracking-wider mb-0.5">
                                         Mail
                                     </span>
-                                    <a href="mailto:overseas@freightdigitalfzc.com" className="hover:underline font-medium tracking-wide block">
-                                        overseas@freightdigitalfzc.com
-                                    </a>
-                                    <a href="mailto:global@freightdigitalfzc.com" className="hover:underline font-medium tracking-wide block">
-                                        global@freightdigitalfzc.com
-                                    </a>
-                                    <a href="mailto:overseas@freightdigitalfzc.com" className="hover:underline font-medium tracking-wide block">
-                                        overseas@freightdigitalfzc.com
+                                    <a href="mailto:newsletter@freightdigitalfzc.com" className="hover:underline font-medium tracking-wide block">
+                                        newsletter@freightdigitalfzc.com
                                     </a>
                                 </div>
                             </div>
