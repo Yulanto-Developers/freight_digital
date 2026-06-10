@@ -7,7 +7,7 @@ import { Metadata } from "next";
 // import TicketSection from "@/components/Home/TicketSection";
 import Banner from "@/components/Layout/Banner";
 export const metadata: Metadata = {
-  title: "Contact | Symposium",
+  title: "Contact",
 };
 
 const page = () => {
