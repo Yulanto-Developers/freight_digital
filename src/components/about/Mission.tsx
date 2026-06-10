@@ -29,7 +29,7 @@ export default function MissionVision() {
     ];
 
     return (
-        <section className="py-20  flex flex-col items-center justify-center overflow-hidden relative min-h-screen">
+        <section className="pt-14 pb-12  flex flex-col items-center justify-center overflow-hidden relative min-h-screen">
 
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#58595b]/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-[120px] pointer-events-none" />
