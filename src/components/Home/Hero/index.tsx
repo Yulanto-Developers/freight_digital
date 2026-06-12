@@ -12,14 +12,14 @@ const sliderData = [
     {
         tag: "",
         title: "Grow Your Logistics Business \n With Digital Power",
-        desc: "Freight Digital helps freight forwarders, IATA agents, and logistics companies boost visibility and generate high-quality business leads through targeted digital marketing.",
+        desc: "Freight Digital helps freight forwarders, IATA agents, shipping companies, and logistics providers enhance their online presence, increase brand visibility, and generate high-quality business opportunities through targeted digital marketing.",
         bgImage: "/images/banner/banner-1.1.jpg",
         accent: "from-blue-600 to-cyan-400",
     },
     {
         tag: "",
         title: "Digital Marketing \n Built   for Freight Forwarders",
-        desc: "We specialize in logistics marketing—helping freight forwarders, NVOCCs, transport companies, and customs brokers connect with airlines, and carriers to grow their business.",
+        desc: "We specialize in digital marketing for freight forwarders, NVOCCs, transport companies, customs brokers, and logistics providers—helping them increase visibility, generate qualified leads, and grow their business globally.",
         bgImage: "/images/banner/banner-2.jpg",
         accent: "from-purple-600 to-pink-500",
     },

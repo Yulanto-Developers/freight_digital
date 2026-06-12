@@ -13,7 +13,7 @@ const WorkSpeakers = ({ showTitle = true }) => {
         {showTitle && (
           <div className="flex flex-col justify-center items-center">
             <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-[#f1671a] rounded-xl tracking-wider text-[#fff] text-center">Industry Understanding</span>
-            <h2 className="text-center text-[#fff] pb-12">Your Growth with Freight Digital</h2>
+            <h2 className="text-center text-[#fff] pb-12">Why Logistics Companies Choose Freight Digital</h2>
 
           </div>
         )}
@@ -21,7 +21,7 @@ const WorkSpeakers = ({ showTitle = true }) => {
         <div className="text-center md:pb-20 pb-8">
 
           <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" className="text-[#ffffff] dark:text-opacity-90 text-lg font-normal max-w-920 m-auto">
-            The logistics industry is highly competitive and relationship-driven. Many freight forwarding companies still rely on traditional methods such as referrals and agent networks to gain business. Freight Digital helps logistics companies take advantage of these opportunities by building strong digital strategies that improve online visibility and generate qualified business inquiries.
+            The logistics industry is highly competitive and relationship-driven. While referrals and agent networks remain important, a strong digital presence has become essential for attracting new customers and business partners. Freight Digital helps logistics companies improve online visibility, strengthen credibility, and generate qualified business inquiries through industry-focused digital marketing solutions.
 
           </p>
         </div>

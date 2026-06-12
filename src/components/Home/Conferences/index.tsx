@@ -24,7 +24,7 @@ const Conferences = () => {
               <span className="uppercase text-[11px] font-black italic px-2 py-1 bg-[#58595B] rounded-xl tracking-wider text-[#fff]">Welcome to </span>
               <h2 className="uppercase text-[#F1671A]">freight digital</h2>
               <p className="text-lg font-normal text-justify text-[#58595B] dark:text-opacity-90 max-w-506 md:pt-3 pt-5 md:pb-10 pb-6">
-                Freight Digital is a specialized marketing platform designed exclusively for the logistics sector, including freight forwarders, shipping companies, and IATA agents. Leveraging deep industry expertise, they help businesses like customs brokers and warehouse providers enhance their digital presence and drive growth.
+                Freight Digital is a specialized digital marketing partner  dedicated exclusively to the freight forwarding, logistics, shipping, and supply chain industry. We help freight forwarders, customs brokers, NVOCCs, transport operators, and logistics service providers strengthen their digital presence, enhance brand visibility, and generate new business opportunities worldwide.
               </p>
               <Link
                 href="/about"

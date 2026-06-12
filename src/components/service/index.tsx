@@ -3,12 +3,17 @@ import { Globe, Megaphone, TrendingUp, ListPlus, Mail } from 'lucide-react';
 import Image from 'next/image';
 
 // Define the service item interface
+interface Category {
+    name: string;
+    link: string;
+}
+
 interface ServiceItem {
     id: number;
     title: string;
     description: string;
     icon: React.ReactNode;
-    cate: any
+    cate: Category[]
 }
 
 export default function ServicesSection() {
