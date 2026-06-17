@@ -1,13 +1,13 @@
 
 import React from "react";
 import { Metadata } from "next";
-import TicketSection from "@/components/Home/TicketSection";
+// import TicketSection from "@/components/Home/TicketSection";
 import Banner from "@/components/Layout/Banner";
 import Edition from "@/components/edition";
 
 
 export const metadata: Metadata = {
-    title: "About",
+    title: "Daily Edition",
 };
 
 const page = () => {
@@ -19,7 +19,7 @@ const page = () => {
         <>
             <Banner page='Daily Edition' url='/images/banner/banner-3.jpg' />
             <Edition/>
-            <TicketSection />
+            {/* <TicketSection /> */}
         </>
     );
 };
