@@ -37,7 +37,7 @@ const TicketSection = () => {
         <section className="dark:bg-[#58595b] -pt-3 font-sans">
             <div className="container px-4">
 
-                <div className="relative md:mx-auto mx-0 mt-10 md:mt-20 overflow-hidden lg:-mb-48 bg-[#fff]  border-1 border-[#fff] rounded-xl 
+                <div className="relative md:mx-auto mx-0  overflow-hidden lg:-mb-48 bg-[#fff]  border-1 border-[#fff] rounded-xl 
                                 [clip-path:polygon(30px_0%,calc(100%_-_30px)_0%,100%_30px,100%_calc(100%_-_30px),calc(100%_-_30px)_100%,30px_100%,0%_calc(100%_-_30px),0%_30px)]
                                 before:content-[''] before:absolute before:inset-0 before:bg-[url('/images/paper-texture.png')] before:opacity-20 hover:translate-y-2">
 
