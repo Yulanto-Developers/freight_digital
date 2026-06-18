@@ -72,7 +72,7 @@ const Header: React.FC = () => {
     <>
       {/* <div className="relative"></div> */}
       <header
-        className={`fixed h-36 top-0 py-1 z-50 w-full bg-white transition-all  ${sticky ? "shadow-lg dark:shadow-darkmd bg-white" : "shadow-none"
+        className={`fixed h-36 top-0 py-1 z-50 w-full bg-[#0A2947] transition-all  
           }`}
       >
         <div className="container">
@@ -145,7 +145,7 @@ const Header: React.FC = () => {
             {headerData.map((item, index) => (
               <MobileHeaderLink key={index} item={item} />
             ))}
-            <div className="mt-4 flex flex-col space-y-4 w-full">
+            {/* <div className="mt-4 flex flex-col space-y-4 w-full">
               <Link
                 href="#"
                 className="bg-transparent border border-solid border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
@@ -166,10 +166,10 @@ const Header: React.FC = () => {
               >
                 Sign Up
               </Link>
-            </div>
+            </div> */}
           </nav>
         </div>
-        {/* Successsful Login Alert */}
+       
         <div className={`fixed top-6 end-1/2 translate-x-1/2 z-50 ${authDialog?.isSuccessDialogOpen == true ? "block" : "hidden"}`}>
           <SuccessfullLogin />
         </div>

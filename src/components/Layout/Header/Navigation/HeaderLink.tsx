@@ -36,10 +36,10 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({ item, sticky }) => {
 
     ${path === item.href ||
             path.startsWith(`/${item.label.toLowerCase()}`)
-            ? "text-[#F1671A]"
+            ? "text-[#fff]"
             : sticky
-              ? "text-[#58595B]"
-              : "text-[#58595B]"
+              ? "text-[#fff]"
+              : "text-[#fff]"
           }
   `}
       >

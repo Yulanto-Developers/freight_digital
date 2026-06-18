@@ -162,7 +162,7 @@ import { Phone, MapPin, Mail } from 'lucide-react';
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-[#f1671a] text-white antialiased">
+        <footer className="bg-[#0A2947] text-white antialiased">
             <div className="container pt-10 mx-auto px-6 max-w-7xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:pt-24 pt-16 md:pb-5  border-b border-white/20">
 
