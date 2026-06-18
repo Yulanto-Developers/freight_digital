@@ -17,8 +17,9 @@ const sliderData = [
         accent: "from-blue-600 to-cyan-400",
     },
     {
+        // Marketing Solutions Built for Freight Forwarders & Logistics Companies
         tag: "",
-        title: "Digital Marketing \n Built   for Freight Forwarders",
+        title: "Marketing Solutions  Built for Freight \n Forwarders & Logistics Companies ",
         desc: "We specialize in digital marketing for freight forwarders, NVOCCs, transport companies, customs brokers, and logistics providers—helping them increase visibility, generate qualified leads, and grow their business globally.",
         bgImage: "/images/banner/banner-2.jpg",
         accent: "from-purple-600 to-pink-500",
