@@ -169,7 +169,7 @@ const ContactInfo = () => {
                             </Link>
 
                             <Link
-                                href="/contact"
+                                href="/edition"
                                 className="bg-white text-[#58595b] hover:bg-slate-100 font-semibold px-6 py-4 rounded-xl transition-all duration-300 text-center shadow-lg hover:scale-105"
                             >
                                 Schedule a Demo
