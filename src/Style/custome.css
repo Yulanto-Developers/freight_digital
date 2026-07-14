@@ -51,7 +51,9 @@
   /* padding-top: 20px !important; */
 }
 
-
+.slide-content{
+  height: 700px;
+}
 
 /* primary color : #f1671a */
 /* secondary color: #58595b */

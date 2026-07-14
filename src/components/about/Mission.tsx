@@ -24,15 +24,15 @@ export default function MissionVision() {
     const data: MissionData[] = [
         {
             title: 'Our Mission',
-            description1: 'At Freight Digital, our mission is to help freight forwarding and logistics companies grow their business through powerful and effective digital marketing strategies.',
-            description2: 'We aim to improve the online presence of logistics companies by providing specialized services such as search engine optimization, and professional networking strategies. By combining industry understanding with modern digital tools, we help logistics businesses attract new clients, build credibility, and compete in the global market.',
-            description3: 'Our focus is to deliver marketing solutions that create real business opportunities for freight forwarders, customs brokers, transportation companies, and logistics service providers.',
+            description1: 'At Freight Digital, our mission is to empower freight forwarding and logistics companies to achieve sustainable business growth through strategic and results-driven digital marketing solutions.',
+            description2: 'We are committed to enhancing the online presence of logistics businesses by delivering specialized services, including Search Engine Optimization (SEO) and professional networking strategies.',
+            description3: 'Our focus is to create measurable business opportunities for freight forwarders, logistics providers, carriers, NVOCCs, customs brokers, and supply chain companies by increasing visibility, generating qualified leads, and strengthening their market presence.',
         },
         {
             title: 'Our Vision',
-            description1: 'Our vision is to become a trusted digital marketing partner for freight forwarding and logistics companies worldwide.',
-            description2: 'We strive to support logistics businesses in adapting to the digital era by helping them build strong online visibility, connect with global trade partners, and expand their reach across international markets.',
-            description3: 'Freight Digital aims to be recognized as a specialized marketing agency that understands the logistics industry and helps companies achieve long-term growth through digital innovation.',
+            description1: 'Our vision is to become the most trusted digital marketing partner for freight forwarder and logistics companies worldwide.',
+            description2: 'We strive to help logistics businesses thrive in the digital era by building strong online visibility, enhancing brand recognition, and creating meaningful connections with customers and global trade partners.',
+            description3: 'Freight Digital aims to be recognized as a leading specialized marketing partner for the logistics industry, delivering innovative digital solutions that drive sustainable growth, business development, and long-term success.',
         }
     ];
 
@@ -81,9 +81,9 @@ export default function MissionVision() {
                     {/* Section Header */}
                     <div className="max-w-3xl mx-auto text-center mb-16">
                         <h2 className="text-5xl  pb-4 font-bold text-[#58595b] leading-tight">
-                                Our Goals at<span className="text-[#f1671a]"> Freight Digital</span>
-                            </h2>
-                      
+                            Our Goals at<span className="text-[#f1671a]"> Freight Digital</span>
+                        </h2>
+
                         <p className="text-gray-600 text-lg leading-relaxed">
                             We help freight forwarding and logistics companies leverage tailored, cutting-edge digital marketing solutions to achieve sustainable growth and stronger market visibility worldwide.
                         </p>
@@ -116,7 +116,7 @@ export default function MissionVision() {
                         })}
                     </div>
 
-                 
+
                     <div className="relative rounded-3xl overflow-hidden p-8 mt-10 bg-[#58595b] border border-slate-800 shadow-xl max-w-4xl mx-auto group">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#f1671a]/10 to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">

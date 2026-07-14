@@ -77,7 +77,7 @@ export default function IndustriesServed() {
                         Industries <span className="text-[#f1671a]">We Serve</span>
                     </h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-2xl">
-                      From freight forwarding to warehousing and supply chain management, Freipght Digital provides industry-specific marketing solutions that help logistics companies grow in a competitive global market.
+                      From freight forwarding to warehousing and supply chain management, Freight Digital provides industry-specific marketing solutions that help logistics companies grow in a competitive global market.
                     </p>
                 </div>
 

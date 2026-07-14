@@ -12,22 +12,24 @@ const sliderData = [
     {
         tag: "",
         title: "Grow Your Logistics Business \n With Digital Power",
-        desc: "Freight Digital helps freight forwarders, IATA agents, shipping companies, and logistics providers enhance their online presence, increase brand visibility, and generate high-quality business opportunities through targeted digital marketing.",
+        desc: "Freight Digital helps freight forwarders, NVOCCs, customs brokers, shipping companies, transport operators, and logistics providers increase their online visibility, strengthen their brand, and generate qualified business opportunities through specialized digital marketing solutions.",
         bgImage: "/images/banner/banner-1.1.jpg",
         accent: "from-blue-600 to-cyan-400",
+        text: '2.5rem'
     },
     {
         // Marketing Solutions Built for Freight Forwarders & Logistics Companies
         tag: "",
-        title: "Marketing Solutions  Built for Freight \n Forwarders & Logistics Companies ",
-        desc: "We specialize in digital marketing for freight forwarders, NVOCCs, transport companies, customs brokers, and logistics providers—helping them increase visibility, generate qualified leads, and grow their business globally.",
+        title: "Marketing Solutions  Built for Freight Forwarders & Logistics Companies ",
+        desc: "We specialize in digital marketing solutions for freight forwarders, NVOCCs, customs brokers, transport companies, and logistics providers—helping them increase brand visibility, generate qualified business leads, and grow their business globally.",
         bgImage: "/images/banner/banner-2.jpg",
         accent: "from-purple-600 to-pink-500",
+        text: '2.5rem'
     },
 ];
 export default function HeroSlider() {
     return (
-        <section className="relative w-full overflow-hidden paddding-hero-ls">
+        <section className="relative w-full h-full overflow-hidden paddding-hero-ls">
             <Swiper
                 modules={[Autoplay, EffectFade, Pagination]}
                 effect="fade"
@@ -40,7 +42,7 @@ export default function HeroSlider() {
                     <SwiperSlide key={i} className="relative">
                         {/* Background Image with Gradient Overlay */}
                         <div
-                            className="absolute inset-0 bg-cover bg-center transition-transform duration-[5000ms] scale-110 swiper-slide-active:scale-100"
+                            className="absolute  inset-0 bg-cover bg-center transition-transform duration-[5000ms] scale-110 swiper-slide-active:scale-100"
                             style={{ backgroundImage: `url(${slide.bgImage})` }}
                         >
                             {/* Dark Overlay - Critical for text readability */}
@@ -50,17 +52,17 @@ export default function HeroSlider() {
 
                         {/* Content Container */}
                         <div className="container relative z-10 flex flex-col justify-center px-6">
-                            <div className="max-w-3xl slide-content md:py-25">
+                            <div className="max-w-3xl slide-content  md:py-25">
                                 {/* chuma space purpose */}
                                 <span className={`inline-block px-5 py-1.5 rounded-full text-xs font-black uppercase   mb-8 shadow-lg`}>
                                     {slide.tag ?? ''}
                                 </span>
 
-                                <h1 className="text-6xl md:text-[4rem] md:mt-36 font-black text-white leading-[1.05] mb-8 drop-shadow-2xl whitespace-pre-line">
+                                <h1 className={`text-6xl md:text-[${slide.text}] md:mt-36 font-black text-white leading-[1.05] mb-8 drop-shadow-2xl whitespace-pre-line`}>
                                     {slide.title}
                                 </h1>
 
-                                <p className="text-xl text-slate-200 max-w-xl mb-12 leading-relaxed opacity-90">
+                                <p className="text-lg text-slate-200 text-justify  max-w-xl mb-12 leading-relaxed opacity-90">
                                     {slide.desc}
                                 </p>
 

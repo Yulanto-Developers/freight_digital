@@ -115,6 +115,7 @@ const ContactInfo = () => {
                 </div>
 
 
+
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200/60 dark:border-slate-800 group/map">
                     <div
                         className="absolute inset-0 pointer-events-none transition-opacity duration-300 group-hover/map:opacity-0 opacity-5"
@@ -130,6 +131,69 @@ const ContactInfo = () => {
 
             {/* 3. Injected Pop-up Component */}
             <CareerModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
+            <div className="my-20">
+                <div className="relative overflow-hidden rounded-3xl bg-[#58595b] px-8 py-12 lg:px-16 lg:py-16 shadow-2xl">
+
+                    {/* Background Glow */}
+                    <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-[#f1671a]/20 blur-3xl"></div>
+                    <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-white/10 blur-3xl"></div>
+
+                    <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+
+                        {/* Left */}
+                        <div className="max-w-2xl">
+                            <span className="inline-block mb-4 rounded-full bg-[#f1671a]/20 px-4 py-2 text-sm font-semibold text-[#f1671a] uppercase tracking-widest">
+                                Let's Work Together
+                            </span>
+
+                            <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight">
+                                Ready to Grow Your Business?
+                            </h2>
+
+                            <p className="mt-5 text-lg text-slate-300 leading-8">
+                                Whether you're looking to expand your business, advertise your
+                                services, or discover new logistics opportunities, our team is
+                                here to help you get started.
+                            </p>
+                        </div>
+
+                        {/* Right */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full lg:w-auto">
+
+                            <Link
+                                href="/contact"
+                                className="bg-[#f1671a] hover:bg-orange-600 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 text-center shadow-lg hover:scale-105"
+                            >
+                                Book a Free Consultation
+                            </Link>
+
+                            <Link
+                                href="/contact"
+                                className="bg-white text-[#58595b] hover:bg-slate-100 font-semibold px-6 py-4 rounded-xl transition-all duration-300 text-center shadow-lg hover:scale-105"
+                            >
+                                Schedule a Demo
+                            </Link>
+
+                            <Link
+                                href="/contact#consultation-section"
+                                className="border border-white/30 hover:border-[#f1671a] text-white hover:bg-[#f1671a] font-semibold px-6 py-4 rounded-xl transition-all duration-300 text-center"
+                            >
+                                Contact Us Today
+                            </Link>
+
+                            <Link
+                                href="/edition"
+                                className="border border-white/30 hover:border-[#f1671a] text-white hover:bg-[#f1671a] font-semibold px-6 py-4 rounded-xl transition-all duration-300 text-center"
+                            >
+                                Advertise With Us
+                            </Link>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };

@@ -1,4 +1,6 @@
+'use client'
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Tag, Megaphone, IdCardLanyard, Users, Globe, CalendarDays, Newspaper } from 'lucide-react';
 
 type Cardobj = {
@@ -7,6 +9,13 @@ type Cardobj = {
     desc: string;
     num: string;
 };
+
+type Fobj = {
+    fTile: string;
+    fdesc?: string;
+    heading?: string;
+    fCat?: string[];
+}
 
 function Edition() {
     const card: Cardobj[] = [
@@ -35,11 +44,54 @@ function Edition() {
             num: '04'
         }
     ];
+    const featureDetails: Fobj[] = [
+        {
+            fTile: "Featured Company Promotion",
+            fdesc:
+                "Receive two weeks of featured promotional exposure across the Freight Digital platform after your membership is activated.",
+        },
+        {
+            fTile: "Recruitment Advertising",
+            fdesc:
+                "Publish one recruitment advertisement annually to attract qualified logistics professionals.",
+        },
+        {
+            fTile: "Recruitment Support",
+            fdesc:
+                "Receive additional assistance in promoting your hiring requirements throughout your membership period.",
+        },
+        {
+            fTile: "Global Industry Network",
+            heading: "Connect with",
+            fCat: [
+                "Freight Forwarders",
+                "Logistics Companies",
+                "NVOCCs",
+                "Customs Brokers",
+                "Shipping Lines",
+                "Airlines",
+                "Warehousing Companies",
+                "Transport Operators",
+                "Trade Professionals Worldwide",
+            ],
+        },
+        {
+            fTile: "Daily Industry Edition (Monday–Friday)",
+            heading: "Access",
+            fCat: [
+                "Logistics News",
+                "Shipping Updates",
+                "Freight Market Trends",
+                "Industry Insights",
+                "Business Opportunities",
+            ],
+        },
+    ];
 
     return (
         <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 space-y-16">
 
-           
+
             <div className="max-w-4xl mx-auto flex flex-col justify-center items-center gap-6 text-center">
                 <div className="space-y-2">
                     <h1 className="text-orange-600 tracking-widest font-black text-4xl sm:text-5xl uppercase">
@@ -57,6 +109,7 @@ function Edition() {
                         Join The Platform Where Freight{' '}
                         <span className="text-orange-600 font-bold">Companies Connect</span>
                     </p>
+                    <span className='text-black'>Expand your reach. Build valuable connections. Grow your business.</span>
                 </div>
 
                 <div className="pt-2">
@@ -74,7 +127,7 @@ function Edition() {
                 </div>
             </div>
 
-            
+
             <div className="p-6 sm:p-8 bg-black rounded-xl max-w-5xl mx-auto shadow-xl text-stone-300">
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-4 text-center sm:text-left">
                     <div className="flex items-center gap-3 text-amber-600 font-bold tracking-wide">
@@ -84,9 +137,13 @@ function Edition() {
 
                     <div className="hidden sm:block border-l border-stone-800 h-16"></div>
 
-                    <div className="flex items-baseline gap-2 justify-center">
-                        <span className="font-medium text-stone-400 text-lg">AED</span>
-                        <span className="font-black text-white text-5xl sm:text-6xl tracking-tight">299</span>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className="flex items-baseline gap-2 justify-center">
+                            <span className="font-medium text-stone-400 text-lg">AED</span>
+                            <span className="font-black text-white text-5xl sm:text-6xl tracking-tight">299<span className='text-lg'>/ Year</span></span>
+                        </div>
+
+                        Become a Member
                     </div>
 
                     <div className="hidden sm:block border-l border-stone-800 h-16"></div>
@@ -101,11 +158,11 @@ function Edition() {
                     </div>
                 </div>
                 <p className="text-center text-sm text-stone-400 pt-6 mt-6 border-t border-stone-900 max-w-xl mx-auto">
-                    Secure your annual access at a preferred rate for a limited enrollment period.
+                    Secure your annual access at a special introductory rate for a limited enrollment period.
                 </p>
             </div>
 
-           
+
             <div className="max-w-6xl mx-auto flex items-center">
                 <div className="flex-grow h-[1px] bg-stone-300"></div>
                 <h2 className="px-4 sm:px-6 text-xl sm:text-2xl font-black tracking-wider text-stone-900 uppercase whitespace-nowrap">
@@ -114,7 +171,7 @@ function Edition() {
                 <div className="flex-grow h-[1px] bg-stone-300"></div>
             </div>
 
-         
+
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {card.map((item, index) => (
@@ -142,7 +199,7 @@ function Edition() {
                 </div>
             </div>
 
-           
+
             <div className="p-6 sm:p-8 bg-black rounded-xl max-w-5xl mx-auto shadow-xl text-stone-300">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
 
@@ -178,7 +235,71 @@ function Edition() {
                 </div>
             </div>
 
-         
+
+            <div className="max-w-7xl mx-auto px-5 py-10">
+                {/* <div className="text-center mb-14">
+                    <h2 className="text-4xl font-black text-slate-900 uppercase">
+                        Membership Benefits
+                    </h2>
+
+                    <p className="text-slate-500 mt-3">
+                        Everything included with your annual membership.
+                    </p>
+                </div> */}
+
+                <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+                    {featureDetails.map((item, index) => (
+                        <div
+                            key={index}
+                            className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-3 hover:border-orange-500 hover:shadow-2xl"
+                        >
+                            {/* Number */}
+                            <div className="absolute top-5 right-6 text-6xl font-black text-[#f1671a]/50 group-hover:text-[#f1671a]">
+                                {String(index + 1).padStart(2, "0")}
+                            </div>
+
+                            {/* Orange Line */}
+                            <div className="w-14 h-1 bg-orange-500 rounded-full mb-6"></div>
+
+                            {/* Title */}
+                            <h3 className="text-2xl font-bold text-slate-900 mb-5">
+                                {item.fTile}
+                            </h3>
+
+                            {/* Description */}
+                            {item.fdesc && (
+                                <p className="text-slate-600 leading-7">
+                                    {item.fdesc}
+                                </p>
+                            )}
+
+                            {/* Category */}
+                            {item.fCat && (
+                                <div className="mt-7">
+                                    <div className="inline-flex items-center rounded-full bg-orange-50 px-4 py-2 text-sm font-bold text-orange-600 mb-5">
+                                        {item.heading}
+                                    </div>
+
+                                    <ul className="space-y-3">
+                                        {item.fCat.map((cat, i) => (
+                                            <li key={i} className="flex items-center gap-3 text-slate-700">
+                                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-xs font-bold text-white">
+                                                    ✓
+                                                </span>
+                                                <span>{cat}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            <div className="absolute bottom-0 left-0 h-1 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+
             <div className="flex flex-col justify-center items-center text-center max-w-2xl mx-auto space-y-6 pt-4">
                 <div className="space-y-1">
                     <p className="text-slate-900 font-black text-xl sm:text-2xl tracking-widest uppercase">

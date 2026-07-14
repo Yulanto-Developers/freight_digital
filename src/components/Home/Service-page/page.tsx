@@ -127,7 +127,7 @@ const ServicesPage = () => {
                             </h3>
 
                             <p className="text-white mb-10 max-w-xl mx-auto leading-relaxed text-lg">
-                                Join the world's leading freight network and start promoting your services today.
+                                Join the world's leading Global Logistics Hub and start promoting your services today.
                             </p>
 
                             <Link

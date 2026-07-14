@@ -263,16 +263,19 @@ const Footer: FC = () => {
                             Quick Links
                         </h4>
                         <ul className="flex flex-col gap-5">
-                            {["Home", "About Us", "Our Services", "Advertise With Us", "Contact Us"].map((item) => {
-                                const path = item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "")}`;
-                                return (
-                                    <li key={item} className="transform transition-transform duration-200 hover:translate-x-1">
-                                        <Link href={path} className="text-white/80 hover:text-white text-base font-normal tracking-wide transition-colors">
-                                            {item}
-                                        </Link>
-                                    </li>
-                                );
-                            })}
+                            {[
+                                { path: '/', label: 'Home' },
+                                { path: '/about', label: 'About Us' },
+                                { path: '/service', label: 'Services' },
+                                { path: '/edition', label: 'Daily Edition' },
+                                { path: '/contact', label: 'Contact Us' },
+                            ].map((item) => (
+                                <li key={item.path} className="transform transition-transform duration-200 hover:translate-x-1">
+                                    <Link href={item.path} className="text-white/80 hover:text-white text-base font-normal tracking-wide transition-colors">
+                                        {item.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
