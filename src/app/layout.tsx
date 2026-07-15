@@ -11,6 +11,11 @@ const dmsans = DM_Sans({ subsets: ["latin"] });
 import NextTopLoader from 'nextjs-toploader';
 import LayoutWarper from "./layoutWarper";
 import { Toaster } from "react-hot-toast";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+ icons:'images/logo/Favicon.png'
+};
 
 export default function RootLayout({
   children,

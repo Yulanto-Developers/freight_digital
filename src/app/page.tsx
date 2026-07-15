@@ -10,7 +10,7 @@ import Testimonials from '@/components/Home/Testimonials';
 // import TicketSection from '@/components/Home/TicketSection';
 import ServicesPage from '@/components/Home/Service-page/page';
 export const metadata: Metadata = {
-  title: "Freight Digital",
+  title: "Freight Digital | Home",
 };
 
 export default function Home() {

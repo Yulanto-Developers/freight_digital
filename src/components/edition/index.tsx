@@ -15,6 +15,7 @@ type Fobj = {
     fdesc?: string;
     heading?: string;
     fCat?: string[];
+    pub?: string;
 }
 
 function Edition() {
@@ -85,6 +86,7 @@ function Edition() {
                 "Industry Insights",
                 "Business Opportunities",
             ],
+            pub: 'Published every business day.'
         },
     ];
 
@@ -106,8 +108,8 @@ function Edition() {
 
                 <div>
                     <p className="text-slate-800 text-lg sm:text-xl font-medium tracking-wide">
-                        Join The Platform Where Freight{' '}
-                        <span className="text-orange-600 font-bold">Companies Connect</span>
+                        Join the Platform Where the Global Freight {' '}
+                        <span className="text-orange-600 font-bold">Industry Connects</span>
                     </p>
                     <span className='text-black'>Expand your reach. Build valuable connections. Grow your business.</span>
                 </div>
@@ -150,7 +152,7 @@ function Edition() {
 
                     <div className="flex flex-col items-center sm:items-end gap-3">
                         <span className="text-stone-400 font-semibold tracking-wide uppercase text-sm sm:text-base">
-                            Annual Subscription
+                            Become a Member
                         </span>
                         <button className="text-white py-2 px-6 bg-amber-600 hover:bg-amber-700 font-bold text-sm rounded transition-colors duration-200 uppercase tracking-wider shadow-md">
                             Get Access
@@ -292,6 +294,7 @@ function Edition() {
                                     </ul>
                                 </div>
                             )}
+                            <p className='text-[#000]/80 font-semibold mt-3'>{item.pub}</p>
 
                             <div className="absolute bottom-0 left-0 h-1 w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></div>
                         </div>
@@ -306,13 +309,14 @@ function Edition() {
                         Position Your Business
                     </p>
                     <p className="text-[#f1671a] font-black text-2xl sm:text-3xl tracking-tight uppercase">
-                        In Front of the Freight Industry
+                        In Front of the Global Freight Industry
                     </p>
                 </div>
 
                 <button className="bg-[#f1671a] hover:bg-[#d95610] text-white font-bold text-sm sm:text-base py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 uppercase tracking-widest active:scale-95">
                     Activate Access
                 </button>
+                <p className='text-[#58595b]'>Become part of a dedicated platform built exclusively for freight forwarding and logistics professionals.</p>
             </div>
 
         </div>
