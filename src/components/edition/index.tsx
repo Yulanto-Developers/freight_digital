@@ -6,7 +6,7 @@ import { Tag, Megaphone, IdCardLanyard, Users, Globe, CalendarDays, Newspaper } 
 type Cardobj = {
     icon: React.ReactNode;
     title: string;
-    desc: string;
+    desc?: string;
     num: string;
 };
 
@@ -23,25 +23,25 @@ function Edition() {
         {
             icon: <Megaphone className="w-5 h-5 text-white" />,
             title: 'Extended Industry Visibility',
-            desc: 'Your company receives two weeks of featured promotional exposure across the platform after activation.',
+            // desc: 'Your company receives two weeks of featured promotional exposure across the platform after activation.',
             num: '01'
         },
         {
             icon: <IdCardLanyard className="w-5 h-5 text-white" />,
             title: 'Recruitment Promotion Access',
-            desc: 'One recruitment advertisement placement included with your annual access.',
+            //desc: 'One recruitment advertisement placement included with your annual access.',
             num: '02'
         },
         {
             icon: <Users className="w-5 h-5 text-white" />,
             title: 'Dedicated Hiring Assistance',
-            desc: 'Additional recruitment support and coordination available throughout the annual access period.',
+            //desc: 'Additional recruitment support and coordination available throughout the annual access period.',
             num: '03'
         },
         {
             icon: <Globe className="w-5 h-5 text-white" />,
             title: 'Industry Access',
-            desc: 'Connect with freight forwarders, logistics companies, NVOCCs, airlines, and trade professionals worldwide.',
+            //desc: 'Connect with freight forwarders, logistics companies, NVOCCs, airlines, and trade professionals worldwide.',
             num: '04'
         }
     ];
@@ -145,7 +145,7 @@ function Edition() {
                             <span className="font-black text-white text-5xl sm:text-6xl tracking-tight">299<span className='text-lg'>/ Year</span></span>
                         </div>
 
-                        Become a Member
+                        {/* Become a Member */}
                     </div>
 
                     <div className="hidden sm:block border-l border-stone-800 h-16"></div>
