@@ -19,32 +19,28 @@ type Fobj = {
 }
 
 function Edition() {
-    const card: Cardobj[] = [
-        {
-            icon: <Megaphone className="w-5 h-5 text-white" />,
-            title: 'Extended Industry Visibility',
-            // desc: 'Your company receives two weeks of featured promotional exposure across the platform after activation.',
-            num: '01'
-        },
-        {
-            icon: <IdCardLanyard className="w-5 h-5 text-white" />,
-            title: 'Recruitment Promotion Access',
-            //desc: 'One recruitment advertisement placement included with your annual access.',
-            num: '02'
-        },
-        {
-            icon: <Users className="w-5 h-5 text-white" />,
-            title: 'Dedicated Hiring Assistance',
-            //desc: 'Additional recruitment support and coordination available throughout the annual access period.',
-            num: '03'
-        },
-        {
-            icon: <Globe className="w-5 h-5 text-white" />,
-            title: 'Industry Access',
-            //desc: 'Connect with freight forwarders, logistics companies, NVOCCs, airlines, and trade professionals worldwide.',
-            num: '04'
-        }
-    ];
+    // const card: Cardobj[] = [
+    //     {
+    //         icon: <Megaphone className="w-5 h-5 text-white" />,
+    //         title: 'Extended Industry Visibility',
+    //         num: '01'
+    //     },
+    //     {
+    //         icon: <IdCardLanyard className="w-5 h-5 text-white" />,
+    //         title: 'Recruitment Promotion Access',
+    //         num: '02'
+    //     },
+    //     {
+    //         icon: <Users className="w-5 h-5 text-white" />,
+    //         title: 'Dedicated Hiring Assistance',
+    //         num: '03'
+    //     },
+    //     {
+    //         icon: <Globe className="w-5 h-5 text-white" />,
+    //         title: 'Industry Access',
+    //         num: '04'
+    //     }
+    // ];
     const featureDetails: Fobj[] = [
         {
             fTile: "Featured Company Promotion",
@@ -76,18 +72,18 @@ function Edition() {
                 "Trade Professionals Worldwide",
             ],
         },
-        {
-            fTile: "Daily Industry Edition (Monday–Friday)",
-            heading: "Access",
-            fCat: [
-                "Logistics News",
-                "Shipping Updates",
-                "Freight Market Trends",
-                "Industry Insights",
-                "Business Opportunities",
-            ],
-            pub: 'Published every business day.'
-        },
+        // {
+        //     fTile: "Daily Industry Edition (Monday–Friday)",
+        //     heading: "Access",
+        //     fCat: [
+        //         "Logistics News",
+        //         "Shipping Updates",
+        //         "Freight Market Trends",
+        //         "Industry Insights",
+        //         "Business Opportunities",
+        //     ],
+        //     pub: 'Published every business day.'
+        // },
     ];
 
     return (
@@ -142,7 +138,7 @@ function Edition() {
                     <div className='flex flex-col justify-center items-center'>
                         <div className="flex items-baseline gap-2 justify-center">
                             <span className="font-medium text-stone-400 text-lg">AED</span>
-                            <span className="font-black text-white text-5xl sm:text-6xl tracking-tight">299<span className='text-lg'>/ Year</span></span>
+                            <span className="font-black text-white text-5xl sm:text-6xl tracking-tight">299<span className='text-lg'>/ Per Year</span></span>
                         </div>
 
                         {/* Become a Member */}
@@ -165,16 +161,16 @@ function Edition() {
             </div>
 
 
-            <div className="max-w-6xl mx-auto flex items-center">
+            {/* <div className="max-w-6xl mx-auto flex items-center">
                 <div className="flex-grow h-[1px] bg-stone-300"></div>
                 <h2 className="px-4 sm:px-6 text-xl sm:text-2xl font-black tracking-wider text-stone-900 uppercase whitespace-nowrap">
                     Your Annual Access Includes
                 </h2>
                 <div className="flex-grow h-[1px] bg-stone-300"></div>
-            </div>
+            </div> */}
 
 
-            <div className="max-w-6xl mx-auto">
+            {/* <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {card.map((item, index) => (
                         <div
@@ -199,13 +195,13 @@ function Edition() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
 
 
-            <div className="p-6 sm:p-8 bg-black rounded-xl max-w-5xl mx-auto shadow-xl text-stone-300">
+            {/* <div className="p-6 sm:p-8 bg-black rounded-xl max-w-5xl mx-auto shadow-xl text-stone-300">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
 
-                    {/* Left Column: Schedule & Focus */}
+                 
                     <div className="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
                         <div className="p-3 bg-amber-600/10 rounded-lg text-amber-500">
                             <CalendarDays className="w-6 h-6" />
@@ -220,22 +216,22 @@ function Edition() {
                         </div>
                     </div>
 
-                    {/* Vertical Divider (Hidden on mobile) */}
+               
                     <div className="hidden md:block border-l border-amber-600/30 h-16"></div>
 
-                    {/* Right Column: Detailed Description with Newspaper icon */}
+                   
                     <div className="flex items-center justify-between gap-6 bg-stone-900/40 p-4 rounded-xl border border-stone-800/50 w-full md:max-w-xl">
                         <p className="text-sm text-stone-400 leading-relaxed text-center sm:text-left">
                             Stay informed with the latest logistics news, market trends, and industry updates—accessible Monday to Friday.
                         </p>
                         <div className="text-stone-300 shrink-0 hidden sm:block">
-                            {/* Updated to Newspaper icon */}
+                            
                             <Newspaper className="w-7 h-7 stroke-[1.5]" />
                         </div>
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
 
             <div className="max-w-7xl mx-auto px-5 py-10">
@@ -249,7 +245,7 @@ function Edition() {
                     </p>
                 </div> */}
 
-                <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+                <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-2">
                     {featureDetails.map((item, index) => (
                         <div
                             key={index}
