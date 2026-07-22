@@ -72,18 +72,18 @@ function Edition() {
                 "Trade Professionals Worldwide",
             ],
         },
-        // {
-        //     fTile: "Daily Industry Edition (Monday–Friday)",
-        //     heading: "Access",
-        //     fCat: [
-        //         "Logistics News",
-        //         "Shipping Updates",
-        //         "Freight Market Trends",
-        //         "Industry Insights",
-        //         "Business Opportunities",
-        //     ],
-        //     pub: 'Published every business day.'
-        // },
+        {
+            fTile: "Daily Industry Edition (Monday–Friday)",
+            heading: "Access",
+            fCat: [
+                "Logistics News",
+                "Shipping Updates",
+                "Freight Market Trends",
+                "Industry Insights",
+                "Business Opportunities",
+            ],
+            pub: 'Published every business day.'
+        },
     ];
 
     return (
@@ -161,13 +161,13 @@ function Edition() {
             </div>
 
 
-            {/* <div className="max-w-6xl mx-auto flex items-center">
+            <div className="max-w-6xl mx-auto flex items-center">
                 <div className="flex-grow h-[1px] bg-stone-300"></div>
                 <h2 className="px-4 sm:px-6 text-xl sm:text-2xl font-black tracking-wider text-stone-900 uppercase whitespace-nowrap">
                     Your Annual Access Includes
                 </h2>
                 <div className="flex-grow h-[1px] bg-stone-300"></div>
-            </div> */}
+            </div>
 
 
             {/* <div className="max-w-6xl mx-auto">
