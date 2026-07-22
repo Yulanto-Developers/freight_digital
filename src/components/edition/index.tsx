@@ -245,7 +245,7 @@ function Edition() {
                     </p>
                 </div> */}
 
-                <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-2">
+                <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
                     {featureDetails.map((item, index) => (
                         <div
                             key={index}
