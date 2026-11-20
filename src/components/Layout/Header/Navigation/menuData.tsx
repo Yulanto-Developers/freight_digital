@@ -13,5 +13,6 @@ export const headerData: HeaderItem[] = [
   //   ],
   // },
   { label: "Daily Edition", href: "/edition" },
+  { label: "View Magazine", href: "/magazine" },
   { label: "Contact Us", href: "/contact" },
 ];  

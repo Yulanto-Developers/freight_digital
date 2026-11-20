@@ -314,6 +314,11 @@ function Edition() {
                 </button>
                 <p className='text-[#58595b]'>Become part of a dedicated platform built exclusively for freight forwarding and logistics professionals.</p>
             </div>
+            {/* <div>
+                <button className="bg-[#f1671a] hover:bg-[#d95610] text-white font-bold text-sm sm:text-base py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 uppercase tracking-widest active:scale-95">
+                    View Magazine
+                </button>
+            </div> */}
 
         </div>
     );

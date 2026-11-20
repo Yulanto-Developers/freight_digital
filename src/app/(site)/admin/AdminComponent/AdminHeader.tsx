@@ -58,9 +58,9 @@ export const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
     }
 
     return (
-        <header className="bg-white border-b border-gray-200 fixed top-0 z-30 w-full h-16 flex items-center justify-between px-6">
+        <header className="bg-white border-b border-gray-200 fixed top-0 z-30 w-full h-20 flex items-center justify-between px-6">
             <div className="flex items-center gap-3">
-                <Image src={logo} alt='logo' width={100} height={90} />
+                <Image src={logo} alt='logo' width={130} height={150} />
             </div>
 
 

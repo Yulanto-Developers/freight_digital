@@ -15,7 +15,7 @@ export const Sidebar: React.FC = () => {
     const menuItems: SidebarItem[] = [
         {
             label: 'Dashboard',
-            href: '/admin',
+            href: '/admin/',
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4zM14 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2v-4z" />
@@ -45,23 +45,24 @@ export const Sidebar: React.FC = () => {
 
     return (
         <aside className="w-64 bg-white border-r border-gray-200 fixed left-0 h-[calc(100vh-4rem)] z-20 overflow-y-auto hidden md:flex flex-col justify-between p-4">
-            <div className="space-y-1">
-                <p className="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
+            <div className="space-y-2 pt-5">
+                {/* <p className="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
                     Main Menu
-                </p>
+                </p> */}
 
                 {menuItems.map((item) => {
                     const isActive = pathname === item.href;
+                    // console.log(isActive + " " + pathname);
                     return (
                         <Link
                             key={item.href}
                             href={item.href}
                             className={`flex items-center gap-3 px-3 py-2.5 rounded-xl font-medium transition-colors group ${isActive
-                                ? 'bg-indigo-50 text-indigo-700'
-                                : 'text-gray-600 hover:text-indigo-600 hover:bg-gray-50'
+                                ? 'bg-[#f1671a]/20 text-[#f1671a]'
+                                : 'text-[#58595b] hover:text-[#f1671a] hover:bg-[#f1671a]/20'
                                 }`}
                         >
-                            <span className={isActive ? 'text-indigo-700' : 'text-gray-400 group-hover:text-indigo-600'}>
+                            <span className={isActive ? 'text-[#f1671a]' : 'text-[#58595b] group-hover:text-[#f1671a]'}>
                                 {item.icon}
                             </span>
                             {item.label}
@@ -70,37 +71,8 @@ export const Sidebar: React.FC = () => {
                 })}
             </div>
 
-           
+
         </aside>
     );
 };
-
-// "use client";
-
-// import React from "react";
-// import Link from "next/link";
-// import { usePathname } from "next/navigation";
-
-// export function Sidebar() {
-//     const pathname = usePathname();
-
-//     return (
-//         <aside className="w-64 bg-white shadow-md fixed h-full">
-//             <ul>
-//                 <li>
-//                     <Link
-//                         href="/admin"
-//                         className={
-//                             pathname === "/admin"
-//                                 ? "font-bold"
-//                                 : ""
-//                         }
-//                     >
-//                         Dashboard
-//                     </Link>
-//                 </li>
-//             </ul>
-//         </aside>
-//     );
-// }
 
