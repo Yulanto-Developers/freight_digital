@@ -19,7 +19,7 @@ export default async function MagazineDetailPage({
     }
 
     return (
-        <main className="min-h-screen bg-[#d8d1c4] pt-52">
+        <main className="min-h-screen bg-[#58595b] pt-52">
 
             {/* <div className="max-w-6xl mx-auto px-4 pt-8 pb-3 text-center">
 
