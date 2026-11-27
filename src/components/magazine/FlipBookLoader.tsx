@@ -4,6 +4,7 @@
 import { forwardRef, useCallback, useEffect, useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 
+
 import img1 from "@/../public/images/newspaper/img- (1).jpg";
 import img2 from "@/../public/images/newspaper/img- (2).jpg";
 import img3 from "@/../public/images/newspaper/img- (3).jpg";
