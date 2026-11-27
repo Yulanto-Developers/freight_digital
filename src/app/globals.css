@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "@/Style/style.css";
 @import "@/Style/custome.css";
+@import "@/Style/newspaper.css";
 
 html {
   scroll-behavior: smooth;
@@ -178,15 +179,5 @@ body {
   background: #F1671A !important;
 }
 
-/* Center the flipbook */
-#newspaper-book {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-#newspaper-book .stf__parent {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
+/* newspaper */

@@ -1,0 +1,573 @@
+/* ------------------------------------------------------------------
+   Every page is a fixed 1024 x 1536 design (ratio 1 : 1.5).
+   1em inside .np-canvas = 10px of that design, and the whole canvas
+   scales with the page width.
+------------------------------------------------------------------- */
+
+:root {
+  --np-orange: #e8641b;
+  --np-ink: #15110c;
+  --np-paper: #f7f2e8;
+  --np-rule: #2b241b;
+}
+
+.np-book {
+  margin: 0 auto;
+}
+
+/* ---- Paper ---- */
+.np-page {
+  container-type: inline-size;
+  position: relative;
+  overflow: hidden;
+  color: var(--np-ink);
+  font-family: var(--font-head), "Times New Roman", Times, serif;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(255, 255, 255, 0.65), transparent 55%),
+    radial-gradient(circle at 90% 95%, rgba(150, 120, 70, 0.1), transparent 50%),
+    var(--np-paper);
+  box-shadow: inset 0 0 0 1px rgba(60, 40, 15, 0.12);
+}
+
+.np-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.np-page.is-left::after {
+  background: linear-gradient(to left, rgba(40, 25, 5, 0.18), transparent 7%);
+}
+
+.np-page.is-right::after {
+  background: linear-gradient(to right, rgba(40, 25, 5, 0.18), transparent 7%);
+}
+
+.np-canvas {
+  font-size: calc(100cqw / 102.4);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 2.4em;
+  line-height: 1.15;
+}
+
+.np-canvas h1,
+.np-canvas h2,
+.np-canvas h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.np-canvas p {
+  margin: 0;
+}
+
+.np-accent {
+  color: var(--np-orange);
+}
+
+.np-cat {
+  color: var(--np-orange);
+  font-weight: 700;
+  font-size: 1.28em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.np-canvas .ph {
+  position: relative;
+}
+
+/* ================= FRONT PAGE ================= */
+.fp {
+  display: grid;
+  grid-template-rows: 15.8em 13.8em 96.4em 27.6em;
+}
+
+/* Masthead */
+.fp-masthead {
+  display: grid;
+  grid-template-columns: 17.5em 1fr 15.5em;
+  align-items: center;
+  border-bottom: 0.28em double var(--np-rule);
+  padding-top: 0.4em;
+}
+
+.fp-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1em;
+  border-right: 0.1em solid var(--np-rule);
+}
+
+.fp-center {
+  text-align: center;
+  padding: 0 0.8em;
+}
+
+.fp-sky {
+  display: block;
+  margin: 0 auto;
+  width: 35em;
+  height: 5.8em;
+}
+
+.fp-title {
+  font-size: 6.4em;
+  line-height: 0.94;
+  margin-top: -0.18em !important;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.fp-date {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5em;
+  border-left: 0.1em solid var(--np-rule);
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.fp-date i {
+  display: block;
+  width: 3.5em;
+  height: 0.16em;
+  margin-top: 0.45em;
+  background: var(--np-orange);
+}
+
+/* Teaser strip */
+.fp-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 0.1em solid var(--np-rule);
+  overflow: hidden;
+}
+
+.fp-t {
+  display: flex;
+  align-items: stretch;
+  gap: 1em;
+  padding: 1em 0;
+  min-width: 0;
+}
+
+.fp-t:nth-child(n + 2) {
+  border-left: 0.1em solid var(--np-rule);
+  padding-left: 1.1em;
+}
+
+.fp-t:nth-child(-n + 2) {
+  padding-right: 1.1em;
+}
+
+.fp-t .ph {
+  flex: none;
+  width: 11.6em;
+  height: 11.4em;
+}
+
+.fp-t .txt {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.fp-t h3 {
+  font-size: 1.82em;
+  line-height: 1.08;
+  margin-top: 0.2em;
+}
+
+.fp-pg {
+  display: block;
+  margin-top: auto;
+  text-align: right;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+/* Main story + right sidebar */
+.fp-main {
+  display: grid;
+  grid-template-columns: 64.5em minmax(0, 1fr);
+  padding-top: 1.4em;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.fp-l {
+  padding-right: 1.8em;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fp-l h2 {
+  font-size: 6.3em;
+  line-height: 0.96;
+  letter-spacing: -0.015em;
+}
+
+.fp-l .deck {
+  font-size: 2.25em;
+  font-style: italic;
+  line-height: 1.22;
+  margin-top: 0.45em;
+}
+
+.fp-l .hero {
+  margin-top: 1.4em;
+  height: 42.5em;
+  width: 100%;
+  flex: none;
+}
+
+.fp-l .cap {
+  font-size: 1.3em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+.fp-cols {
+  columns: 2;
+  column-gap: 3em;
+  column-rule: 0.1em solid var(--np-rule);
+  margin-top: 1.3em;
+  height: 18.8em;
+  overflow: hidden;
+}
+
+.fp-cols p {
+  font-size: 1.52em;
+  line-height: 1.18;
+  text-align: justify;
+}
+
+.fp-cols p:first-child {
+  break-inside: avoid;
+}
+
+.drop {
+  float: left;
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: 0.82;
+  color: var(--np-orange);
+  padding: 0.04em 0.12em 0 0;
+}
+
+.fp-more {
+  position: absolute;
+  right: 1.8em;
+  bottom: 0.35em;
+  color: var(--np-orange);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* Right sidebar */
+.fp-r {
+  border-left: 0.1em solid var(--np-rule);
+  padding-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.fp-s {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em 0;
+  border-bottom: 0.1em solid var(--np-rule);
+}
+
+.fp-s:first-child {
+  padding-top: 0;
+}
+
+.fp-s:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.fp-s h3 {
+  font-size: 2.2em;
+  line-height: 1.06;
+  margin-top: 0.2em;
+}
+
+.fp-s .ph {
+  width: 100%;
+  margin-top: 0.65em;
+  flex: none;
+}
+
+.fp-s .ph-lg {
+  height: 16.5em;
+}
+
+.fp-s .ph-sm {
+  height: 11.2em;
+}
+
+.fp-s-foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.6em;
+  margin-top: 0.5em;
+}
+
+.fp-s .tx {
+  font-size: 1.32em;
+  line-height: 1.14;
+  flex: 1;
+}
+
+.fp-s .fp-pg {
+  margin-top: 0;
+  flex: none;
+  font-size: 1.3em;
+}
+
+/* Bottom row */
+.fp-bottom {
+  display: grid;
+  grid-template-columns: 49.5em minmax(0, 1fr);
+  column-gap: 1.8em;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.fp-bl {
+  border-top: 0.1em solid var(--np-rule);
+  padding-top: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 20.5em;
+  gap: 1.2em;
+  align-items: stretch;
+}
+
+.fp-bl-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fp-bl h3 {
+  font-size: 2.45em;
+  line-height: 1.06;
+  margin-top: 0.2em;
+}
+
+.fp-bl .tx {
+  font-size: 1.45em;
+  line-height: 1.18;
+  margin-top: 0.5em;
+}
+
+.fp-bl .ph {
+  width: 20.5em;
+  height: 20.5em;
+  flex: none;
+}
+
+.fp-bl .fp-more {
+  position: static;
+  margin-top: auto;
+  padding-bottom: 0.4em;
+  text-align: right;
+}
+
+.fp-box {
+  margin-top: 1.2em;
+  height: 23.2em;
+  box-sizing: border-box;
+  border: 0.22em solid var(--np-orange);
+  padding: 1.5em 2.1em;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.fp-box h3 {
+  font-size: 3.3em;
+  line-height: 1.08;
+  padding-bottom: 0.25em;
+  border-bottom: 0.06em solid var(--np-orange);
+}
+
+.fp-box p {
+  font-size: 1.55em;
+  line-height: 1.35;
+  margin-top: 0.9em;
+}
+
+/* ================= INNER PAGES ================= */
+.ip {
+  display: flex;
+  flex-direction: column;
+  padding: 2.6em 4.2em 2.4em;
+}
+
+.ip-head {
+  display: grid;
+  grid-template-columns: 11em 1fr 11em;
+  align-items: center;
+  height: 11em;
+  flex: none;
+  border-bottom: 0.22em solid var(--np-rule);
+  padding-bottom: 1em;
+}
+
+.ip-head h1 {
+  font-size: 4.5em;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.ip-head p {
+  font-size: 1.55em;
+  letter-spacing: 0.14em;
+  text-align: center;
+  margin-top: 0.45em;
+  color: #3a3228;
+}
+
+.ip-story {
+  flex: 1;
+  min-height: 0;
+  padding: 2.2em 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ip-story + .ip-story {
+  border-top: 0.12em solid var(--np-rule);
+  margin-top: 1.8em;
+}
+
+.ip-story h2 {
+  font-size: 4.2em;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.ip-row {
+  display: grid;
+  grid-template-columns: 42em 1fr;
+  gap: 2.8em;
+  margin-top: 1.8em;
+  align-items: start;
+}
+
+.ip-row.is-flip {
+  grid-template-columns: 1fr 42em;
+}
+
+.ip-row.is-flip .ip-fig {
+  order: 2;
+}
+
+.ip-fig {
+  margin: 0;
+}
+
+.ip-fig .ph {
+  width: 100%;
+  height: 31em;
+}
+
+.ip-fig figcaption {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.6em;
+  color: #2b241b;
+}
+
+.ip-body {
+  font-size: 1.95em;
+  line-height: 1.42;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.ip-body .drop {
+  font-size: 3.1em;
+  line-height: 0.85;
+}
+
+.ip-empty {
+  margin-top: 8em;
+  text-align: center;
+  font-size: 2.4em;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.ip-foot {
+  flex: none;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1em solid var(--np-rule);
+  padding-top: 0.8em;
+  font-size: 1.75em;
+}
+
+/* ================= BACK PAGE ================= */
+.bp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  text-align: center;
+}
+
+.bp h2 {
+  font-size: 7em;
+  line-height: 1;
+}
+
+.bp i {
+  display: block;
+  width: 10em;
+  height: 0.3em;
+  background: var(--np-orange);
+}
+
+.bp .lead {
+  max-width: 34em;
+  font-size: 3em;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.bp .meta {
+  font-size: 2em;
+  opacity: 0.7;
+}
+
+.bp .thanks {
+  margin-top: 4em;
+  font-size: 2.2em;
+  font-weight: 700;
+}

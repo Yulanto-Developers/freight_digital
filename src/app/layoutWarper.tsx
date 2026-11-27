@@ -1,15 +1,17 @@
+
 "use client";
 
-import Footer from '@/components/Layout/Footer'
-import Header from '@/components/Layout/Header'
-import { usePathname } from 'next/navigation'
+import Footer from "@/components/Layout/Footer";
+import Header from "@/components/Layout/Header";
+import { usePathname } from "next/navigation";
 
 function LayoutWarper({ children }: { children: React.ReactNode }) {
     const path = usePathname();
 
     const hideLayout =
-        path.includes('/admin/') || path.includes('/signin') || path.includes('/signup')
-    // console.log(path);
+        path.includes("/admin") ||
+        path.includes("/signin") ||
+        path.includes("/signup");
 
     return (
         <>
